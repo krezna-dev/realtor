@@ -7,7 +7,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/normalize.css" type="text/css">
   <link rel="stylesheet" href="css/style.css" type="text/css">
-  <link rel="stylesheet" type="text/css" href="css/sliders.css" />
   <title>Риэлтор В.О | Риэлтор Екатерина Осипова | Санкт-Петербург</title>
 </head>
 
@@ -32,8 +31,18 @@
           </li>
         </ul>
         <div class="header__tel-and-address tel-and-address">
-          <address class="address header__address">г. Санкт-Петербург</address>
-          <a href="tel:+79811512502" class="header__tel tel">+7 (981) 151-25-02</a>
+          <div class="adress-wrap">
+            <svg class="header__geo-icon geo-icon">
+              <use xlink:href="img/icons.svg#geo"></use>
+            </svg>
+            <address class="address header__address">г. Санкт-Петербург</address>
+          </div>
+          <a href="tel:+79811512502" class="tel-wrap header__tel tel">
+            <svg class="header__tel-icon tel-icon">
+              <use xlink:href="img/icons.svg#phone"></use>
+            </svg>
+            +7 (981) 151-25-02
+          </a>
         </div>
       </nav>
     </div>
@@ -46,7 +55,7 @@
       <div class="hero__container">
         <h1 class="hero__heading">Семейный риэлтор Васильевского острова</h1>
         <p class="hero__content text">Тщательный поиск для покупателей, и скорая продажа для продавцов!</p>
-        <button class="hero__btn btn">Записаться на консультацию</button>
+        <a href="#callback-form" class="hero__btn btn">Записаться на консультацию</a>
       </div>
     </section>
 
@@ -68,14 +77,14 @@
                   Покупая квартиру вместе со мной, вы получите тщательный и быстрый поиск квартиры по любым вашим
                   запросам
                 </p>
-                <button class="btn choice__buy-btn">Хочу жить на В.О</button>
+                <a href="#buy" class="btn choice__buy-btn">Хочу жить на В.О</a>
               </div>
               <div class="choice__sell">
                 <p class="choice__sell-content">
                   Продавая квартиру, вы получите оперативность и результат! За счет того, что я живу на В. О. - я
                   быстро могу предоставить просмотр объекта и проанализировать рынок недвижимости
                 </p>
-                <button class="btn choice__sell-btn">Продать квартиру на В.О</button>
+                <a href="#sell" class="btn choice__sell-btn">Продать квартиру на В.О</a>
               </div>
             </div>
           </div>
@@ -139,12 +148,28 @@
             <a href="#" class="btn slide__btn">Заказать</a>
           </div>
         </div>
+        <div class="slide-wrapper">
+          <div class="slide__img-heading">
+            <img src="img/slide3.jpg" alt="услуга" class="slide__img">
+            <h3 class="slide__heading">Поиск недвижимости</h3>
+          </div>
+          <p class="slide__content">
+            Поиск обьекта без сопровождения м большим количеством комнат, а так же
+            коммерческое помещение по договоренности
+          </p>
+          <div class="slide__price-button">
+            <h3 class="slide__price">
+              20 000 - 50 000 руб.
+            </h3>
+            <a href="#" class="btn slide__btn">Заказать</a>
+          </div>
+        </div>
       </div>
       <a href="#callback-form" class="btn buy__btn">Получить консультацию по услугам</a>
     </section>
 
     <!-- seller -->
-    <section class="buy sell">
+    <section class="buy sell" id="sell">
       <h2 class="section__heading buy__heading seller__heading">Услуги для продавцов</h2>
 
       <div class="slider seller__slider">
@@ -198,12 +223,29 @@
             <a href="#" class="btn slide__btn">Заказать</a>
           </div>
         </div>
+        <div class="slide-wrapper">
+          <div class="slide__img-heading">
+            <img src="img/slide6.jpg" alt="услуга" class="slide__img">
+            <h3 class="slide__heading">Поиск недвижимости</h3>
+          </div>
+          <p class="slide__content">
+            Поиск обьекта без сопровождения м большим количеством комнат, а так же
+            коммерческое помещение по договоренности
+          </p>
+          <div class="slide__price-button">
+            <h3 class="slide__price">
+              20 000 - 50 000 руб.
+            </h3>
+            <a href="#" class="btn slide__btn">Заказать</a>
+          </div>
+        </div>
       </div>
       <a href="#callback-form" class="btn buy__btn sell__btn">Получить консультацию по услугам</a>
     </section>
 
     <!-- test -->
     <section class="test">
+
       <h2 class="section__heading test__heading">
         Не знаете, какую услугу выбрать?
       </h2>
@@ -295,6 +337,26 @@
             Для проверки документов собсвтенника на банкротство и снижения рисков
           </p>
         </div>
+
+        <div class="service__slide-wrapper">
+          <div class="service__slide-img-heading">
+            <img src="img/lawyer.jpg" alt="услуга" class="service__slide-img">
+            <h3 class="service__slide-heading">Юрист</h3>
+          </div>
+          <p class="service__slide-content">
+            Для проверки документов собсвтенника на банкротство и снижения рисков
+          </p>
+        </div>
+
+        <div class="service__slide-wrapper">
+          <div class="service__slide-img-heading">
+            <img src="img/lawyer.jpg" alt="услуга" class="service__slide-img">
+            <h3 class="service__slide-heading">Юрист</h3>
+          </div>
+          <p class="service__slide-content">
+            Для проверки документов собсвтенника на банкротство и снижения рисков
+          </p>
+        </div>
       </div>
 
     </section>
@@ -306,40 +368,70 @@
         <ul class="pros__list">
           <li class="pros__item">
             <h3 class="pros__item-heading">Компетенция</h3>
-            <p class="pros__content-regular">
-              Обращаясь в агентство, к вам могут прикрепить агента-новичка, который своей безграмотностью может провести
-              сделку некачественно
-            </p>
-            <p class="pros__content-bold">
-              Я работаю на рынке недвижимости 6 лет и провожу 10 сделок в месяц. Обращаясь ко мне, вы работаете только
-              со мной.
-            </p>
+            <div class="cons-wrap">
+              <svg class="cons__icon">
+                <use xlink:href="img/icons.svg#disadvantage"></use>
+              </svg>
+              <p class="pros__content-regular pros-text">
+                Обращаясь в агентство, к вам могут прикрепить агента-новичка, который своей безграмотностью может провести
+                сделку некачественно
+              </p>
+            </div>
+            <div class="pros-wrap">
+              <svg class="pros__icon">
+                <use xlink:href="img/icons.svg#advantage"></use>
+              </svg>
+              <p class="pros__content-bold pros-text">
+                Я работаю на рынке недвижимости 6 лет и провожу 10 сделок в месяц. Обращаясь ко мне, вы работаете только
+                со мной.
+              </p>
+            </div>
           </li>
           <li class="pros__item">
             <h3 class="pros__item-heading">Комплексный подход</h3>
-            <p class="pros__content-regular">
-              Чаще всего в агентстве для каждой задачи есть определенный агент. При продаже квартиры вы будете работать
-              с одним, при покупке - с другим
-            </p>
-            <p class="pros__content-bold">
-              Если вам необходимо купить квартиру на деньги с продажи старой, то я проведу эти сделки быстрее, не
-              проводя ненужные процедуры повторно.
-            </p>
+            <div class="cons-wrap">
+              <svg class="cons__icon">
+                <use xlink:href="img/icons.svg#disadvantage"></use>
+              </svg>
+              <p class="pros__content-regular pros-text">
+                Чаще всего в агентстве для каждой задачи есть определенный агент. При продаже квартиры вы будете работать
+                с одним, при покупке - с другим
+              </p>
+            </div>
+            <div class="pros-wrap">
+              <svg class="pros__icon">
+                <use xlink:href="img/icons.svg#advantage"></use>
+              </svg>
+              <p class="pros__content-bold pros-text">
+                Если вам необходимо купить квартиру на деньги с продажи старой, то я проведу эти сделки быстрее, не
+                проводя ненужные процедуры повторно.
+              </p>
+            </div>
           </li>
           <li class="pros__item">
             <h3 class="pros__item-heading">Отстаиваю интересы своего клиента</h3>
-            <p class="pros__content-regular">
-              При поиске квартиры, агентство может продать вам ту, чьей квартирой сама и занимается. При продаже -
-              предложить покупателя среди своих клиентов. На чьей стороне в этом случае будет агентство при спорных
-              ситуациях?
-            </p>
-            <p class="pros__content-bold">
-              После того, как мы подписываем договор, я отстаиваю ваши интересы на любом этапе работы! У меня нет
-              дополнительных баз покупателей и продавцов
-            </p>
+            <div class="cons-wrap">
+              <svg class="cons__icon">
+                <use xlink:href="img/icons.svg#disadvantage"></use>
+              </svg>
+              <p class="pros__content-regular pros-text">
+                При поиске квартиры, агентство может продать вам ту, чьей квартирой сама и занимается. При продаже -
+                предложить покупателя среди своих клиентов. На чьей стороне в этом случае будет агентство при спорных
+                ситуациях?
+              </p>
+            </div>
+            <div class="pros-wrap">
+              <svg class="pros__icon">
+                <use xlink:href="img/icons.svg#advantage"></use>
+              </svg>
+              <p class="pros__content-bold pros-text">
+                После того, как мы подписываем договор, я отстаиваю ваши интересы на любом этапе работы! У меня нет
+                дополнительных баз покупателей и продавцов
+              </p>
+            </div>
           </li>
         </ul>
-        <a href="#" class="btn pros__btn">Получить консультацию по услугам</a>
+        <a href="#callback-form" class="btn pros__btn">Получить консультацию по услугам</a>
       </div>
     </section>
 
@@ -374,6 +466,22 @@
           </p>
         </div>
 
+        <div class="sert__slide-wrapper">
+          <img src="img/sert3.jpg" alt="сертификат" class="sert__slide-img">
+          <h3 class="sert__slide-heading">Сертификат с признанием заслуг</h3>
+          <p class="sert__slide-content">
+            Так оценили меня сервис Макромир на основе моей деятельности
+          </p>
+        </div>
+
+        <div class="sert__slide-wrapper">
+          <img src="img/sert3.jpg" alt="сертификат" class="sert__slide-img">
+          <h3 class="sert__slide-heading">Сертификат с признанием заслуг</h3>
+          <p class="sert__slide-content">
+            Так оценили меня сервис Макромир на основе моей деятельности
+          </p>
+        </div>
+
       </div>
 
     </section>
@@ -386,17 +494,30 @@
       <div class="slider testimonial__slider">
 
         <div class="testimonial__slide-wrapper">
-          <img src="img/testimon1.jpg" alt="сертификат" class="testimonial__slide-img">
+          <img src="img/testimon1.jpg" alt="скриншот отзыва" class="testimonial__slide-img">
         </div>
 
         <div class="testimonial__slide-wrapper">
-          <img src="img/testimon3.jpg" alt="сертификат" class="testimonial__slide-img">
+          <img src="img/testimon3.jpg" alt="скриншот отзыва" class="testimonial__slide-img">
         </div>
 
         <div class="testimonial__slide-wrapper">
-          <img src="img/testimon2.jpg" alt="сертификат" class="testimonial__slide-img">
+          <img src="img/testimon2.jpg" alt="скриншот отзыва" class="testimonial__slide-img">
+        </div>
+
+        <div class="testimonial__slide-wrapper">
+          <img src="img/testimon1.jpg" alt="скриншот отзыва" class="testimonial__slide-img">
+        </div>
+
+        <div class="testimonial__slide-wrapper">
+          <img src="img/testimon3.jpg" alt="скриншот отзыва" class="testimonial__slide-img">
+        </div>
+
+        <div class="testimonial__slide-wrapper">
+          <img src="img/testimon2.jpg" alt="скриншот отзыва" class="testimonial__slide-img">
         </div>
       </div>
+
       <a href="https://vk.com/topic-187878494_39942357" target="_blank" class="btn testimonial__btn">Хочу также!</a>
     </section>
 
@@ -420,8 +541,8 @@
           <p class="call__form-descr">Оставьте контактные данные. Я свяжусь с вами в ближайшее время и отвечу на ваши
             вопросы!</p>
           <form action="" class="call__form" autocomplete="on" method="POST">
-            <input type="text" class="form__input" name="name" placeholder="Введите ваше имя">
-            <input type="tel" class="form__input" name="tel" placeholder="Введите номер телефона">
+            <input required type="text" class="form__input" name="name" placeholder="Введите ваше имя">
+            <input required type="tel" class="form__input" name="tel" placeholder="Введите номер телефона">
             <button type="submit" class="btn form__btn">Заказать консультацию</button>
           </form>
         </div>
@@ -488,7 +609,8 @@
           </p>
           <a href="#" download class="btn contract__btn">Получить пример договора</a>
         </div>
-        <img src="img/contract.png" alt="договор" class="contract__img">
+        <div class="contract__img">
+        </div>
       </div>
     </section>
 
@@ -513,12 +635,16 @@
           <div class="gift__conditions">
             <h4 class="gift__cond-heading">Всё, что от вас требуется сделать:</h4>
             <a href="https://vk.com/rieltor_osipova" target="_blank" class="gift__link gift__link-vk  btn">
-              <div class="vk-icon"></div>
+              <svg class="gift__icon-vk">
+                <use xlink:href="img/icons.svg#vk"></use>
+              </svg>
               Подписаться на группу в Вконтакте
             </a>
             <a href="https://www.instagram.com/rieltor_osipova/" target="_blank"
               class="gift__link gift__link-instagram btn">
-              <div class="ig-icon"></div>
+              <svg class="gift__icon-insta">
+                <use xlink:href="img/icons.svg#instagram"></use>
+              </svg>
               Подписаться на Instagram
             </a>
             <div class="gift__cond-mess">
@@ -551,8 +677,18 @@
           </li>
         </ul>
         <div class="footer__tel-and-address tel-and-address">
-          <address class="address footer__address">г. Санкт-Петербург</address>
-          <a href="tel:+79811512502" class="footer__tel tel">+7 (981) 151-25-02</a>
+          <div class="adress-wrap">
+            <svg class="footer__geo-icon geo-icon">
+              <use xlink:href="img/icons.svg#geo"></use>
+            </svg>
+            <address class="address footer__address">г. Санкт-Петербург</address>
+          </div>
+          <a href="tel:+79811512502" class="tel-wrap footer__tel tel">
+            <svg class="footer__tel-icon tel-icon">
+              <use xlink:href="img/icons.svg#phone"></use>
+            </svg>
+            +7 (981) 151-25-02
+          </a>
         </div>
       </nav>
     </div>
@@ -562,8 +698,16 @@
         Copyright © 2020–2021 Семейный риэлтор Васильевского острова. Все права защищены.
       </p>
       <div class="footer__social-media">
-        <a href="https://vk.com/rieltor_osipova" target="_blank" class="footer__vk"></a>
-        <a href="https://www.instagram.com/rieltor_osipova/" target="_blank" class="footer__ig"></a>
+        <a href="https://vk.com/rieltor_osipova" target="_blank" class="footer__vk">
+          <svg class="footer__vk-icon">
+            <use xlink:href="img/icons.svg#vk"></use>
+          </svg>
+        </a>
+        <a href="https://www.instagram.com/rieltor_osipova/" target="_blank" class="footer__ig">
+          <svg class="footer__ig-icon">
+            <use xlink:href="img/icons.svg#ig-footer"></use>
+          </svg>
+        </a>
       </div>
     </div>
   </footer>
