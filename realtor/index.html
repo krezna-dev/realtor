@@ -14,8 +14,54 @@
 
   <!-- header -->
   <header class="header">
+
+
     <div class="nav__container">
+
       <nav class="header__nav nav">
+
+        <!-- burger -->
+        <a id="burger" href="#" class="burger" aria-label="кнопка меню">
+          <div id="burger-icon" class="burger-icon">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </a>
+
+        <!-- burger-hidden -->
+        <nav id="menu" class="burger__hidden-nav" aria-label="меню">
+          <ul class="burger__nav-list nav-list">
+            <li class="burger__nav-item nav-item">
+              <a href="#main" class="burger__nav-link nav-link">Главная</a>
+            </li>
+            <li class="burger__nav-item nav-item">
+              <a href="#buy" class="burger__nav-link nav-link">Услуги</a>
+            </li>
+            <li class="burger__nav-item nav-item">
+              <a href="#testimonial" class="burger__nav-link nav-link">Отзывы</a>
+            </li>
+            <li class="burger__nav-item nav-item">
+              <a href="#contacts" class="burger__nav-link nav-link">Контакты</a>
+            </li>
+          </ul>
+          <div class="burger__tel-and-address tel-and-address">
+            <div class="adress-wrap">
+              <svg class="burger__geo-icon geo-icon">
+                <use xlink:href="img/icons.svg#geo"></use>
+              </svg>
+              <address class="address burger__address">г. Санкт-Петербург</address>
+            </div>
+            <a href="tel:+79811512502" class="tel-wrap burger__tel tel">
+              <svg class="burger__tel-icon tel-icon">
+                <use xlink:href="img/icons.svg#phone"></use>
+              </svg>
+              +7 (981) 151-25-02
+            </a>
+          </div>
+        </nav>
+
         <ul class="header__nav-list nav-list">
           <li class="header__nav-item nav-item">
             <a href="#main" class="header__nav-link nav-link">Главная</a>
@@ -109,8 +155,7 @@
             Поиск обьекта без сопровождения м большим количеством комнат, а так же
             коммерческое помещение по договоренности</p>
           <div class="slide__price-button">
-            <h3 class="slide__price">
-              20 000 - 50 000 руб.
+            <h3 class="slide__price">20 000 	&mdash; 50 000 руб.
             </h3>
             <a href="#" class="btn slide__btn">Заказать</a>
           </div>
@@ -127,7 +172,7 @@
           </p>
           <div class="slide__price-button">
             <h3 class="slide__price">
-              20 000 - 50 000 руб.
+              20 000 	&mdash; 50 000 руб.
             </h3>
             <a href="#" class="btn slide__btn">Заказать</a>
           </div>
@@ -143,7 +188,7 @@
           </p>
           <div class="slide__price-button">
             <h3 class="slide__price">
-              20 000 - 50 000 руб.
+              20 000 	&mdash; 50 000 руб.
             </h3>
             <a href="#" class="btn slide__btn">Заказать</a>
           </div>
@@ -159,7 +204,7 @@
           </p>
           <div class="slide__price-button">
             <h3 class="slide__price">
-              20 000 - 50 000 руб.
+              20 000 	&mdash; 50 000 руб.
             </h3>
             <a href="#" class="btn slide__btn">Заказать</a>
           </div>
@@ -185,7 +230,7 @@
           </p>
           <div class="slide__price-button">
             <h3 class="slide__price">
-              20 000 - 50 000 руб.
+              20 000 	&mdash; 50 000 руб.
             </h3>
             <a href="#" class="btn slide__btn">Заказать</a>
           </div>
@@ -202,7 +247,7 @@
           </p>
           <div class="slide__price-button">
             <h3 class="slide__price">
-              20 000 - 50 000 руб.
+              20 000 	&mdash; 50 000 руб.
             </h3>
             <a href="#" class="btn slide__btn">Заказать</a>
           </div>
@@ -218,7 +263,7 @@
           </p>
           <div class="slide__price-button">
             <h3 class="slide__price">
-              20 000 - 50 000 руб.
+              20 000 	&mdash; 50 000 руб.
             </h3>
             <a href="#" class="btn slide__btn">Заказать</a>
           </div>
@@ -234,7 +279,7 @@
           </p>
           <div class="slide__price-button">
             <h3 class="slide__price">
-              20 000 - 50 000 руб.
+              20 000 	&mdash; 50 000 руб.
             </h3>
             <a href="#" class="btn slide__btn">Заказать</a>
           </div>
@@ -619,41 +664,43 @@
       <h2 class="section__heading gift__heading">
         Получите подарок за подписку на мои социальные сети!
       </h2>
-      <div class="gift__wrap">
-        <div class="gift__text-content">
-          <ul class="gift__list">
-            <li class="gift__item gift__item-bold">
-              Бесплатная косультация по любому вопросу
-            </li>
-            <li class="gift__item">
-              Чек-лист: Твоя идеальная квартира
-            </li>
-            <li class="gift__item">
-              <span class="gift__item-bold-percent">5%</span> скидка на любую услугу!
-            </li>
-          </ul>
-          <div class="gift__conditions">
-            <h4 class="gift__cond-heading">Всё, что от вас требуется сделать:</h4>
-            <a href="https://vk.com/rieltor_osipova" target="_blank" class="gift__link gift__link-vk  btn">
-              <svg class="gift__icon-vk">
-                <use xlink:href="img/icons.svg#vk"></use>
-              </svg>
-              Подписаться на группу в Вконтакте
-            </a>
-            <a href="https://www.instagram.com/rieltor_osipova/" target="_blank"
-              class="gift__link gift__link-instagram btn">
-              <svg class="gift__icon-insta">
-                <use xlink:href="img/icons.svg#instagram"></use>
-              </svg>
-              Подписаться на Instagram
-            </a>
-            <div class="gift__cond-mess">
-              <p class="gift__cond-text">Написать мне в личку где угодно:</p>
-              <p class="gift__cond-text">"Хочу подарок!"</p>
+      <div class="gift__wrap-big">
+        <div class="gift__wrap">
+          <div class="gift__text-content">
+            <ul class="gift__list">
+              <li class="gift__item gift__item-bold">
+                Бесплатная косультация по любому вопросу
+              </li>
+              <li class="gift__item">
+                Чек-лист: Твоя идеальная квартира
+              </li>
+              <li class="gift__item">
+                <span class="gift__item-bold-percent">5%</span> скидка на любую услугу!
+              </li>
+            </ul>
+            <div class="gift__conditions">
+              <h4 class="gift__cond-heading">Всё, что от вас требуется сделать:</h4>
+              <a href="https://vk.com/rieltor_osipova" target="_blank" class="gift__link gift__link-vk  btn">
+                <svg class="gift__icon-vk">
+                  <use xlink:href="img/icons.svg#vk"></use>
+                </svg>
+                Подписаться на группу в Вконтакте
+              </a>
+              <a href="https://www.instagram.com/rieltor_osipova/" target="_blank"
+                class="gift__link gift__link-instagram btn">
+                <svg class="gift__icon-insta">
+                  <use xlink:href="img/icons.svg#instagram"></use>
+                </svg>
+                Подписаться на Instagram
+              </a>
+              <div class="gift__cond-mess">
+                <p class="gift__cond-text">Написать мне в личку где угодно:</p>
+                <p class="gift__cond-text">"Хочу подарок!"</p>
+              </div>
             </div>
           </div>
+          <div class="gift__img"></div>
         </div>
-        <div class="gift__img"></div>
       </div>
     </section>
   </main>
