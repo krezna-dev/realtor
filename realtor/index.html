@@ -15,23 +15,30 @@
   <!-- header -->
   <header class="header">
 
-
-    <div class="nav__container">
+    <div class="nav__container header__nav-container">
 
       <nav class="header__nav nav">
 
         <!-- burger -->
-        <a id="burger" href="#" class="burger" aria-label="кнопка меню">
+        <div id="burger" href="#" class="burger" aria-label="кнопка меню">
           <div id="burger-icon" class="burger-icon">
             <span></span>
             <span></span>
             <span></span>
             <span></span>
           </div>
-        </a>
+        </div>
 
         <!-- burger-hidden -->
         <nav id="menu" class="burger__hidden-nav" aria-label="меню">
+          <div id="burger" href="#" class="burger burger__nav-item" aria-label="кнопка меню">
+            <div id="burger-icon" class="burger-icon open">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
           <ul class="burger__nav-list nav-list">
             <li class="burger__nav-item nav-item">
               <a href="#main" class="burger__nav-link nav-link">Главная</a>
@@ -47,7 +54,7 @@
             </li>
           </ul>
           <div class="burger__tel-and-address tel-and-address">
-            <div class="adress-wrap">
+            <div class="adress-wrap burger__adress-wrap">
               <svg class="burger__geo-icon geo-icon">
                 <use xlink:href="img/icons.svg#geo"></use>
               </svg>
@@ -343,6 +350,45 @@
             покупателей.</p>
         </li>
       </ul>
+
+      <div class="slider adv__slider-mobile">
+        <div class="adv__item">
+          <img src="img/Frame.svg" alt="Календарь" class="adv__img">
+          <h3 class="adv__heading-card">Сделка в 1 день</h3>
+          <p class="adv__content">В день сделки минимальные траты времени и нервов.
+            За счет качественной подготовки и четкого планирования</p>
+        </div>
+        <div class="adv__item">
+          <img src="img/Frame (1).svg" alt="Документ" class="adv__img">
+          <h3 class="adv__heading-card">Риски сведены к нулю</h3>
+          <p class="adv__content">Провожу проверку обоих сторон. Прошу предоставить все документы. И заказываю
+            юридические выписки об объекте и собственнике</p>
+        </div>
+        <div class="adv__item">
+          <img src="img/Frame (2).svg" alt="Вышка" class="adv__img">
+          <h3 class="adv__heading-card">Знание рынка СПБ</h3>
+          <p class="adv__content">Подберу квартиру на вторичке по любым вашим желаниям. Проанализирую цены и выявлю
+            самую выгодную для покупки или
+            для продажи</p>
+        </div>
+        <div class="adv__item">
+          <img src="img/Frame (3).svg" alt="Часы" class="adv__img">
+          <h3 class="adv__heading-card">Метод срочной продажи</h3>
+          <p class="adv__content">Владею технологией аукционного метода продажи квартиры. Это позволяет продать быстро и
+            дорого!</p>
+        </div>
+        <div class="adv__item">
+          <img src="img/Frame (4).svg" alt="Интернет" class="adv__img">
+          <h3 class="adv__heading-card">Более 50 интернет-площадок</h3>
+          <p class="adv__content">Пользуюсь TOPLAb - системой, которая помогает загужать объявления одним кликом.</p>
+        </div>
+        <div class="adv__item">
+          <img src="img/Frame (5).svg" alt="Дом" class="adv__img">
+          <h3 class="adv__heading-card">Грамотный Хоумстейджинг</h3>
+          <p class="adv__content">Подготовлю квартиру к просмотрам и показу в объявлениях. Звонки только от реальных
+            покупателей.</p>
+        </div>
+      </div>
     </section>
 
     <!-- additional services -->
@@ -759,6 +805,7 @@
     </div>
   </footer>
   <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="js/burger.js"></script>
   <script src="js/slick.min.js"></script>
   <script src="js/slick.js"></script>
 </body>

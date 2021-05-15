@@ -34,6 +34,14 @@ $(document).ready(function() {
           slidesToShow: 1.5,
           arrows: false
         }
+      },
+
+      {
+        breakpoint: 460,
+        settings: {
+          slidesToShow: 1,
+          arrows: false
+        }
       }
     ]
   })
