@@ -1,0 +1,879 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/normalize.css" type="text/css">
+  <link rel="stylesheet" href="css/style.css" type="text/css">
+  <script src="js/popup.js"></script>
+  <title>Риэлтор В.О | Риэлтор Екатерина Осипова | Санкт-Петербург</title>
+</head>
+
+<body>
+
+  <!-- header -->
+  <header class="header">
+
+    <div class="nav__container header__nav-container">
+
+      <nav class="header__nav nav">
+
+        <!-- burger -->
+        <div id="burger" class="burger" aria-label="кнопка меню">
+          <div id="burger-icon" class="burger-icon">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+
+        <!-- burger-hidden -->
+        <nav id="menu" class="burger__hidden-nav" aria-label="меню">
+          <div class="burger burger__nav-item" aria-label="кнопка меню">
+            <div class="burger-icon open">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+          <ul class="burger__nav-list nav-list">
+            <li class="burger__nav-item nav-item">
+              <a href="#main" class="burger__nav-link nav-link">Главная</a>
+            </li>
+            <li class="burger__nav-item nav-item">
+              <a href="#buy" class="burger__nav-link nav-link">Услуги</a>
+            </li>
+            <li class="burger__nav-item nav-item">
+              <a href="#testimonial" class="burger__nav-link nav-link">Отзывы</a>
+            </li>
+            <li class="burger__nav-item nav-item">
+              <a href="#contacts" class="burger__nav-link nav-link">Контакты</a>
+            </li>
+          </ul>
+          <div class="burger__tel-and-address tel-and-address">
+            <div class="adress-wrap burger__adress-wrap">
+              <svg class="burger__geo-icon geo-icon">
+                <use xlink:href="img/icons.svg#geo"></use>
+              </svg>
+              <address class="address burger__address">г. Санкт-Петербург</address>
+            </div>
+            <a href="tel:+79811512502" class="tel-wrap burger__tel tel">
+              <svg class="burger__tel-icon tel-icon">
+                <use xlink:href="img/icons.svg#phone"></use>
+              </svg>
+              +7 (981) 151-25-02
+            </a>
+          </div>
+        </nav>
+
+        <ul class="header__nav-list nav-list" aria-label="навигация">
+          <li class="header__nav-item nav-item">
+            <a href="#main" class="header__nav-link nav-link">Главная</a>
+          </li>
+          <li class="header__nav-item nav-item">
+            <a href="#buy" class="header__nav-link nav-link">Услуги</a>
+          </li>
+          <li class="header__nav-item nav-item">
+            <a href="#testimonial" class="header__nav-link nav-link">Отзывы</a>
+          </li>
+          <li class="header__nav-item nav-item">
+            <a href="#contacts" class="header__nav-link nav-link">Контакты</a>
+          </li>
+        </ul>
+        <div class="header__tel-and-address tel-and-address" aria-label="навигация телефон">
+          <div class="adress-wrap">
+            <svg class="header__geo-icon geo-icon">
+              <use xlink:href="img/icons.svg#geo"></use>
+            </svg>
+            <address class="address header__address">г. Санкт-Петербург</address>
+          </div>
+          <a href="tel:+79811512502" class="tel-wrap header__tel tel">
+            <svg class="header__tel-icon tel-icon">
+              <use xlink:href="img/icons.svg#phone"></use>
+            </svg>
+            +7 (981) 151-25-02
+          </a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- hero -->
+    <section class="hero">
+      <div class="hero__container">
+        <h1 class="hero__heading">Семейный риэлтор Васильевского острова</h1>
+        <p class="hero__content text">Тщательный поиск для покупателей, и скорая продажа для продавцов!</p>
+        <a href="#callback-form" class="hero__btn btn" aria-label="кнопка переход в форму обратной связи">Записаться на консультацию</a>
+      </div>
+    </section>
+
+    <!-- about -->
+    <section class="about container">
+      <div class="about__container">
+        <div class="about__inner-container">
+          <div class="about__text-content">
+            <h2 class="section__heading about__heading">Я родилась и живу на Васильевском</h2>
+            <p class="about__content">
+              За все мое время в сфере недвижимости я поняла,
+              что мое призвание сильно связано с этим местом. Я мечтаю жить и работать именно тут. И с радостью помогу
+              купить или продать недвижимость на Васильевском Острове. И сделаю это максимально эффективно, ведь я
+              знаю рынок недвижимости В.О, как свои пять пальцев.
+            </p>
+            <div class="about__choice">
+              <div class="choice__buy">
+                <p class="choice__buy-content">
+                  Покупая квартиру вместе со мной, вы получите тщательный и быстрый поиск квартиры по любым вашим
+                  запросам
+                </p>
+                <a href="#buy" class="btn choice__buy-btn" aria-label="кнопка переход в услуги для покупателя">Хочу жить на В.О</a>
+              </div>
+              <div class="choice__sell">
+                <p class="choice__sell-content">
+                  Продавая квартиру, вы получите оперативность и результат! За счет того, что я живу на В. О. - я
+                  быстро могу предоставить просмотр объекта и проанализировать рынок недвижимости
+                </p>
+                <a href="#sell" class="btn choice__sell-btn" aria-label="кнопка переход в услуги для продавца">Продать квартиру на В.О</a>
+              </div>
+            </div>
+          </div>
+          <div class="about__img-wrapper" aria-label="изображение">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- buyer -->
+    <section class="buy" id="buy">
+      <h2 class="section__heading buy__heading">Услуги для покупателей</h2>
+
+      <div class="slider">
+
+        <div class="slide-wrapper">
+          <div class="slide__img-heading">
+            <img src="img/slide1.jpg" alt="услуга" class="slide__img">
+            <h3 class="slide__heading" data-target="one">Поиск недвижимости</h3>
+          </div>
+          <p class="slide__content">
+            Поиск обьекта без сопровождения м большим количеством комнат, а так же
+            коммерческое помещение по договоренности</p>
+          <div class="slide__price-button">
+            <h3 class="slide__price">20 000 	&mdash; 50 000 руб.
+            </h3>
+            <button class="btn slide__btn" data-path="one" aria-label="кнопка заказать услугу">Заказать</button>
+          </div>
+        </div>
+
+        <div class="slide-wrapper">
+          <div class="slide__img-heading">
+            <img src="img/slide2.jpg" alt="услуга" class="slide__img">
+            <h3 class="slide__heading" data-target="two">Поиск недвижимости</h3>
+          </div>
+          <p class="slide__content">
+            Поиск обьекта без сопровождения м большим количеством комнат, а так же
+            коммерческое помещение по договоренности
+          </p>
+          <div class="slide__price-button">
+            <h3 class="slide__price">
+              20 000 	&mdash; 50 000 руб.
+            </h3>
+            <button class="btn slide__btn" aria-label="кнопка заказать услугу" data-path="two">Заказать</button>
+          </div>
+        </div>
+        <div class="slide-wrapper">
+          <div class="slide__img-heading">
+            <img src="img/slide3.jpg" alt="услуга" class="slide__img">
+            <h3 class="slide__heading" data-target="three">Поиск недвижимости</h3>
+          </div>
+          <p class="slide__content">
+            Поиск обьекта без сопровождения м большим количеством комнат, а так же
+            коммерческое помещение по договоренности
+          </p>
+          <div class="slide__price-button">
+            <h3 class="slide__price">
+              20 000 	&mdash; 50 000 руб.
+            </h3>
+            <button class="btn slide__btn" aria-label="кнопка заказать услугу" data-path="three">Заказать</button>
+          </div>
+        </div>
+        <div class="slide-wrapper">
+          <div class="slide__img-heading">
+            <img src="img/slide3.jpg" alt="услуга" class="slide__img">
+            <h3 class="slide__heading" data-target="four">Поиск недвижимости</h3>
+          </div>
+          <p class="slide__content">
+            Поиск обьекта без сопровождения м большим количеством комнат, а так же
+            коммерческое помещение по договоренности
+          </p>
+          <div class="slide__price-button">
+            <h3 class="slide__price">
+              20 000 	&mdash; 50 000 руб.
+            </h3>
+            <button class="btn slide__btn" aria-label="кнопка заказать услугу" data-path="four">Заказать</button>
+          </div>
+        </div>
+      </div>
+      <a href="#callback-form" class="btn buy__btn">Получить консультацию по услугам</a>
+    </section>
+
+    <!-- seller -->
+    <section class="buy sell" id="sell">
+      <h2 class="section__heading buy__heading seller__heading">Услуги для продавцов</h2>
+
+      <div class="slider seller__slider">
+
+        <div class="slide-wrapper">
+          <div class="slide__img-heading">
+            <img src="img/slide4.jpg" alt="услуга" class="slide__img">
+            <h3 class="slide__heading" data-target="five">Поиск недвижимости</h3>
+          </div>
+          <p class="slide__content">
+            Поиск обьекта без сопровождения м большим количеством комнат, а так же
+            коммерческое помещение по договоренности
+          </p>
+          <div class="slide__price-button">
+            <h3 class="slide__price">
+              20 000 	&mdash; 50 000 руб.
+            </h3>
+            <button class="btn slide__btn" aria-label="кнопка заказать услугу" data-path="five">Заказать</button>
+          </div>
+        </div>
+
+        <div class="slide-wrapper">
+          <div class="slide__img-heading">
+            <img src="img/slide5.jpg" alt="услуга" class="slide__img">
+            <h3 class="slide__heading" data-target="six">Поиск недвижимости</h3>
+          </div>
+          <p class="slide__content">
+            Поиск обьекта без сопровождения м большим количеством комнат, а так же
+            коммерческое помещение по договоренности
+          </p>
+          <div class="slide__price-button">
+            <h3 class="slide__price">
+              20 000 	&mdash; 50 000 руб.
+            </h3>
+            <button class="btn slide__btn" aria-label="кнопка заказать услугу" data-path="six">Заказать</button>
+          </div>
+        </div>
+        <div class="slide-wrapper">
+          <div class="slide__img-heading">
+            <img src="img/slide6.jpg" alt="услуга" class="slide__img">
+            <h3 class="slide__heading" data-target="seven">Поиск недвижимости</h3>
+          </div>
+          <p class="slide__content">
+            Поиск обьекта без сопровождения м большим количеством комнат, а так же
+            коммерческое помещение по договоренности
+          </p>
+          <div class="slide__price-button">
+            <h3 class="slide__price">
+              20 000 	&mdash; 50 000 руб.
+            </h3>
+            <button class="btn slide__btn" aria-label="кнопка заказать услугу" data-path="seven">Заказать</button>
+          </div>
+        </div>
+        <div class="slide-wrapper">
+          <div class="slide__img-heading">
+            <img src="img/slide6.jpg" alt="услуга" class="slide__img">
+            <h3 class="slide__heading" data-target="eight">Поиск недвижимости</h3>
+          </div>
+          <p class="slide__content">
+            Поиск обьекта без сопровождения м большим количеством комнат, а так же
+            коммерческое помещение по договоренности
+          </p>
+          <div class="slide__price-button">
+            <h3 class="slide__price">
+              20 000 	&mdash; 50 000 руб.
+            </h3>
+            <button class="btn slide__btn" aria-label="кнопка заказать услугу" data-path="eight">Заказать</button>
+          </div>
+        </div>
+      </div>
+      <a href="#callback-form" class="btn buy__btn sell__btn">Получить консультацию по услугам</a>
+    </section>
+
+    <!-- test -->
+    <section class="test">
+
+      <h2 class="section__heading test__heading">
+        Не знаете, какую услугу выбрать?
+      </h2>
+      <p class="test__text">
+        Пройди тест в Вконтакте! <br>Просто отвечайте на вопросы и рассчитайте стоимость услуг
+      </p>
+      <a href="#" class="btn test__btn">Пройти тест</a>
+    </section>
+
+    <!-- advantages -->
+    <section class="advantages">
+      <h2 class="section__heading adv__heading">
+        Мои клиенты мне доверяют
+      </h2>
+      <ul class="adv__list">
+        <li class="adv__item">
+          <img src="img/Frame.svg" alt="Календарь" class="adv__img">
+          <h3 class="adv__heading-card">Сделка в 1 день</h3>
+          <p class="adv__content">В день сделки минимальные траты времени и нервов.
+            За счет качественной подготовки и четкого планирования</p>
+        </li>
+        <li class="adv__item">
+          <img src="img/Frame (1).svg" alt="Документ" class="adv__img">
+          <h3 class="adv__heading-card">Риски сведены к нулю</h3>
+          <p class="adv__content">Провожу проверку обоих сторон. Прошу предоставить все документы. И заказываю
+            юридические выписки об объекте и собственнике</p>
+        </li>
+        <li class="adv__item">
+          <img src="img/Frame (2).svg" alt="Вышка" class="adv__img">
+          <h3 class="adv__heading-card">Знание рынка СПБ</h3>
+          <p class="adv__content">Подберу квартиру на вторичке по любым вашим желаниям. Проанализирую цены и выявлю
+            самую выгодную для покупки или
+            для продажи</p>
+        </li>
+        <li class="adv__item">
+          <img src="img/Frame (3).svg" alt="Часы" class="adv__img">
+          <h3 class="adv__heading-card">Метод срочной продажи</h3>
+          <p class="adv__content">Владею технологией аукционного метода продажи квартиры. Это позволяет продать быстро и
+            дорого!</p>
+        </li>
+        <li class="adv__item">
+          <img src="img/Frame (4).svg" alt="Интернет" class="adv__img">
+          <h3 class="adv__heading-card">Более 50 интернет-площадок</h3>
+          <p class="adv__content">Пользуюсь TOPLAb - системой, которая помогает загужать объявления одним кликом.</p>
+        </li>
+        <li class="adv__item">
+          <img src="img/Frame (5).svg" alt="Дом" class="adv__img">
+          <h3 class="adv__heading-card">Грамотный Хоумстейджинг</h3>
+          <p class="adv__content">Подготовлю квартиру к просмотрам и показу в объявлениях. Звонки только от реальных
+            покупателей.</p>
+        </li>
+      </ul>
+
+      <div class="slider adv__slider-mobile">
+        <div class="adv__item">
+          <img src="img/Frame.svg" alt="Календарь" class="adv__img">
+          <h3 class="adv__heading-card">Сделка в 1 день</h3>
+          <p class="adv__content">В день сделки минимальные траты времени и нервов.
+            За счет качественной подготовки и четкого планирования</p>
+        </div>
+        <div class="adv__item">
+          <img src="img/Frame (1).svg" alt="Документ" class="adv__img">
+          <h3 class="adv__heading-card">Риски сведены к нулю</h3>
+          <p class="adv__content">Провожу проверку обоих сторон. Прошу предоставить все документы. И заказываю
+            юридические выписки об объекте и собственнике</p>
+        </div>
+        <div class="adv__item">
+          <img src="img/Frame (2).svg" alt="Вышка" class="adv__img">
+          <h3 class="adv__heading-card">Знание рынка СПБ</h3>
+          <p class="adv__content">Подберу квартиру на вторичке по любым вашим желаниям. Проанализирую цены и выявлю
+            самую выгодную для покупки или
+            для продажи</p>
+        </div>
+        <div class="adv__item">
+          <img src="img/Frame (3).svg" alt="Часы" class="adv__img">
+          <h3 class="adv__heading-card">Метод срочной продажи</h3>
+          <p class="adv__content">Владею технологией аукционного метода продажи квартиры. Это позволяет продать быстро и
+            дорого!</p>
+        </div>
+        <div class="adv__item">
+          <img src="img/Frame (4).svg" alt="Интернет" class="adv__img">
+          <h3 class="adv__heading-card">Более 50 интернет-площадок</h3>
+          <p class="adv__content">Пользуюсь TOPLAb - системой, которая помогает загужать объявления одним кликом.</p>
+        </div>
+        <div class="adv__item">
+          <img src="img/Frame (5).svg" alt="Дом" class="adv__img">
+          <h3 class="adv__heading-card">Грамотный Хоумстейджинг</h3>
+          <p class="adv__content">Подготовлю квартиру к просмотрам и показу в объявлениях. Звонки только от реальных
+            покупателей.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- additional services -->
+    <section class="service">
+      <h2 class="section__heading service__heading">
+        Вместе с услугами риэлтора, вы получаете:
+      </h2>
+
+      <div class="slider service__slider">
+
+        <div class="service__slide-wrapper">
+          <div class="service__slide-img-heading">
+            <img src="img/photograph.jpg" alt="услуга" class="service__slide-img">
+            <h3 class="service__slide-heading">Фотограф</h3>
+          </div>
+          <p class="service__slide-content">
+            Для профессиональной съемки продающегося объекта и эффективной рекламы
+          </p>
+        </div>
+
+        <div class="service__slide-wrapper">
+          <div class="service__slide-img-heading">
+            <img src="img/broker.jpg" alt="услуга" class="service__slide-img">
+            <h3 class="service__slide-heading">Ипотечный брокер</h3>
+          </div>
+          <p class="service__slide-content">
+            Для одобрения ипотеки даже в самых сложных обстоятельствах
+          </p>
+        </div>
+
+        <div class="service__slide-wrapper">
+          <div class="service__slide-img-heading">
+            <img src="img/lawyer.jpg" alt="услуга" class="service__slide-img">
+            <h3 class="service__slide-heading">Юрист</h3>
+          </div>
+          <p class="service__slide-content">
+            Для проверки документов собсвтенника на банкротство и снижения рисков
+          </p>
+        </div>
+
+        <div class="service__slide-wrapper">
+          <div class="service__slide-img-heading">
+            <img src="img/lawyer.jpg" alt="услуга" class="service__slide-img">
+            <h3 class="service__slide-heading">Юрист</h3>
+          </div>
+          <p class="service__slide-content">
+            Для проверки документов собсвтенника на банкротство и снижения рисков
+          </p>
+        </div>
+
+        <div class="service__slide-wrapper">
+          <div class="service__slide-img-heading">
+            <img src="img/lawyer.jpg" alt="услуга" class="service__slide-img">
+            <h3 class="service__slide-heading">Юрист</h3>
+          </div>
+          <p class="service__slide-content">
+            Для проверки документов собсвтенника на банкротство и снижения рисков
+          </p>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- pros and cons -->
+    <section class="pros">
+      <div class="pros__container">
+        <h2 class="section__heading pros__heading">Вместе с услугами риэлтора, вы получаете:</h2>
+        <ul class="pros__list">
+          <li class="pros__item">
+            <h3 class="pros__item-heading">Компетенция</h3>
+            <div class="cons-wrap">
+              <svg class="cons__icon">
+                <use xlink:href="img/icons.svg#disadvantage"></use>
+              </svg>
+              <p class="pros__content-regular pros-text">
+                Обращаясь в агентство, к вам могут прикрепить агента-новичка, который своей безграмотностью может провести
+                сделку некачественно
+              </p>
+            </div>
+            <div class="pros-wrap">
+              <svg class="pros__icon">
+                <use xlink:href="img/icons.svg#advantage"></use>
+              </svg>
+              <p class="pros__content-bold pros-text">
+                Я работаю на рынке недвижимости 6 лет и провожу 10 сделок в месяц. Обращаясь ко мне, вы работаете только
+                со мной.
+              </p>
+            </div>
+          </li>
+          <li class="pros__item">
+            <h3 class="pros__item-heading">Комплексный подход</h3>
+            <div class="cons-wrap">
+              <svg class="cons__icon">
+                <use xlink:href="img/icons.svg#disadvantage"></use>
+              </svg>
+              <p class="pros__content-regular pros-text">
+                Чаще всего в агентстве для каждой задачи есть определенный агент. При продаже квартиры вы будете работать
+                с одним, при покупке - с другим
+              </p>
+            </div>
+            <div class="pros-wrap">
+              <svg class="pros__icon">
+                <use xlink:href="img/icons.svg#advantage"></use>
+              </svg>
+              <p class="pros__content-bold pros-text">
+                Если вам необходимо купить квартиру на деньги с продажи старой, то я проведу эти сделки быстрее, не
+                проводя ненужные процедуры повторно.
+              </p>
+            </div>
+          </li>
+          <li class="pros__item">
+            <h3 class="pros__item-heading">Отстаиваю интересы своего клиента</h3>
+            <div class="cons-wrap">
+              <svg class="cons__icon">
+                <use xlink:href="img/icons.svg#disadvantage"></use>
+              </svg>
+              <p class="pros__content-regular pros-text">
+                При поиске квартиры, агентство может продать вам ту, чьей квартирой сама и занимается. При продаже -
+                предложить покупателя среди своих клиентов. На чьей стороне в этом случае будет агентство при спорных
+                ситуациях?
+              </p>
+            </div>
+            <div class="pros-wrap">
+              <svg class="pros__icon">
+                <use xlink:href="img/icons.svg#advantage"></use>
+              </svg>
+              <p class="pros__content-bold pros-text">
+                После того, как мы подписываем договор, я отстаиваю ваши интересы на любом этапе работы! У меня нет
+                дополнительных баз покупателей и продавцов
+              </p>
+            </div>
+          </li>
+        </ul>
+        <a href="#callback-form" class="btn pros__btn">Получить консультацию по услугам</a>
+      </div>
+    </section>
+
+    <!-- certificates -->
+    <section class="sert">
+      <h2 class="section__heading sert__heading">
+        Сертификаты и благодарности
+      </h2>
+      <div class="slider sert__slider">
+
+        <div class="sert__slide-wrapper">
+          <img src="img/sert1.jpg" alt="сертификат" class="sert__slide-img">
+          <h3 class="sert__slide-heading">Сертификат с признанием заслуг</h3>
+          <p class="sert__slide-content">
+            Так оценили меня сервис Макромир на основе моей деятельности
+          </p>
+        </div>
+
+        <div class="sert__slide-wrapper">
+          <img src="img/sert2.jpg" alt="сертификат" class="sert__slide-img">
+          <h3 class="sert__slide-heading">Сертификат с признанием заслуг</h3>
+          <p class="sert__slide-content">
+            Так оценили меня сервис Макромир на основе моей деятельности
+          </p>
+        </div>
+
+        <div class="sert__slide-wrapper">
+          <img src="img/sert3.jpg" alt="сертификат" class="sert__slide-img">
+          <h3 class="sert__slide-heading">Сертификат с признанием заслуг</h3>
+          <p class="sert__slide-content">
+            Так оценили меня сервис Макромир на основе моей деятельности
+          </p>
+        </div>
+
+        <div class="sert__slide-wrapper">
+          <img src="img/sert3.jpg" alt="сертификат" class="sert__slide-img">
+          <h3 class="sert__slide-heading">Сертификат с признанием заслуг</h3>
+          <p class="sert__slide-content">
+            Так оценили меня сервис Макромир на основе моей деятельности
+          </p>
+        </div>
+
+        <div class="sert__slide-wrapper">
+          <img src="img/sert3.jpg" alt="сертификат" class="sert__slide-img">
+          <h3 class="sert__slide-heading">Сертификат с признанием заслуг</h3>
+          <p class="sert__slide-content">
+            Так оценили меня сервис Макромир на основе моей деятельности
+          </p>
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- testimonials -->
+    <section class="testimonials" id="testimonial">
+      <h2 class="section__heading testimonial__heading">
+        Отзывы
+      </h2>
+      <div class="slider testimonial__slider">
+
+        <div class="testimonial__slide-wrapper">
+          <img src="img/testimon1.jpg" alt="скриншот отзыва" class="testimonial__slide-img">
+        </div>
+
+        <div class="testimonial__slide-wrapper">
+          <img src="img/testimon3.jpg" alt="скриншот отзыва" class="testimonial__slide-img">
+        </div>
+
+        <div class="testimonial__slide-wrapper">
+          <img src="img/testimon2.jpg" alt="скриншот отзыва" class="testimonial__slide-img">
+        </div>
+
+        <div class="testimonial__slide-wrapper">
+          <img src="img/testimon1.jpg" alt="скриншот отзыва" class="testimonial__slide-img">
+        </div>
+
+        <div class="testimonial__slide-wrapper">
+          <img src="img/testimon3.jpg" alt="скриншот отзыва" class="testimonial__slide-img">
+        </div>
+
+        <div class="testimonial__slide-wrapper">
+          <img src="img/testimon2.jpg" alt="скриншот отзыва" class="testimonial__slide-img">
+        </div>
+      </div>
+
+      <a href="https://vk.com/topic-187878494_39942357" target="_blank" class="btn testimonial__btn">Хочу также!</a>
+    </section>
+
+    <!-- callback form -->
+    <section class="call" id="callback-form">
+      <div class="call__wrapper">
+        <div class="call__text-content">
+          <h2 class="section__heading call__heading">Вы в первый раз?</h2>
+          <p class="call__content">
+            Я понимаю, что большинство из вас продают квартиру или покупают её очень редко. И, кажется, что проще
+            разобраться во всем самостоятельно. Но только найти нужную информацию - сложно.
+          </p>
+          <p class="call__content">
+            Но многие забывают о том, что риэлтор может бесплатно подсказать ответы на вопросы по услугам риэлтора и
+            общие вопросы о купле\продаже.
+          </p>
+        </div>
+
+        <div class="call__form-content">
+          <h3 class="call__form-heading">Закажите консультацию</h3>
+          <p class="call__form-descr">
+            Оставьте контактные данные. Я свяжусь с вами в ближайшее время и отвечу на ваши
+            вопросы!
+          </p>
+
+          <form action="https://formspree.io/f/xoqyenvr" method="POST" class="call__form" autocomplete="on">
+            <input type="text"  name="_name" class="form__input" placeholder="Введите ваше имя" data-validate-field="name">
+            <input type="tel" class="form__input form__input-tel" name="_tel" placeholder="Введите номер телефона" data-validate-field="tel" data-validate-field="phone">
+            <button class="btn form__btn">Заказать консультацию</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- quick start -->
+    <section class="quick-start">
+      <h2 class="section__heading start__heading">Как начать взаимодействие?</h2>
+      <ul class="start__list">
+        <li class="start__item">
+          <span class="start__step">1</span>
+          <a href="#сallback-form" class="btn step__btn">Свяжитесь со мной</a>
+        </li>
+        <li class="start__item">
+          <span class="start__step">2</span>
+          <p class="start__step-content">
+            Мы обозначим цели и сроки достижения
+          </p>
+        </li>
+        <li class="start__item">
+          <span class="start__step">3</span>
+          <p class="start__step-content">
+            Согласуем все детали
+          </p>
+        </li>
+        <li class="start__item">
+          <span class="start__step">4</span>
+          <p class="start__step-content">
+            Я начинаю работать по вашему запросу
+          </p>
+        </li>
+        <li class="start__item">
+          <span class="start__step">5</span>
+          <p class="start__step-content">
+            Вы вносите авансовую часть оплаты
+          </p>
+        </li>
+        <li class="start__item">
+          <span class="start__step">6</span>
+          <p class="start__step-content">
+            Подписываем договор
+          </p>
+        </li>
+      </ul>
+    </section>
+
+    <!-- contract -->
+    <section class="contract">
+      <div class="contract__wrap">
+        <div class="contract__text-content">
+          <h2 class="section__heading contract__heading">
+            Для чего нужен договор?
+          </h2>
+          <p class="contract__content">
+            Разнообразный и богатый опыт реализация намеченных плановых заданий играет важную роль в формировании
+            системы обучения кадров, соответствует насущным потребностям. Товарищи! реализация намеченных плановых
+            заданий требуют определения и уточнения дальнейших направлений развития.
+          </p>
+          <p class="contract__content">
+            Повседневная практика показывает, что дальнейшее развитие различных форм деятельности влечет за собой
+            процесс внедрения и модернизации модели развития. Повседневная практика показывает, что сложившаяся
+            структура организации играет важную роль в формировании новых предложений.
+          </p>
+          <a href="#" download class="btn contract__btn">Получить пример договора</a>
+        </div>
+        <div class="contract__img">
+        </div>
+      </div>
+    </section>
+
+    <!-- gift -->
+    <section class="gift">
+      <h2 class="section__heading gift__heading">
+        Получите подарок за подписку на мои социальные сети!
+      </h2>
+      <div class="gift__wrap-big">
+        <div class="gift__wrap">
+          <div class="gift__text-content">
+            <ul class="gift__list">
+              <li class="gift__item gift__item-bold">
+                Бесплатная косультация по любому вопросу
+              </li>
+              <li class="gift__item">
+                Чек-лист: Твоя идеальная квартира
+              </li>
+              <li class="gift__item">
+                <span class="gift__item-bold-percent">5%</span> скидка на любую услугу!
+              </li>
+            </ul>
+            <div class="gift__conditions">
+              <h4 class="gift__cond-heading">Всё, что от вас требуется сделать:</h4>
+              <a href="https://vk.com/rieltor_osipova" target="_blank" class="gift__link gift__link-vk  btn">
+                <svg class="gift__icon-vk">
+                  <use xlink:href="img/icons.svg#vk"></use>
+                </svg>
+                Подписаться на группу в Вконтакте
+              </a>
+              <a href="https://www.instagram.com/rieltor_osipova/" target="_blank"
+                class="gift__link gift__link-instagram btn">
+                <svg class="gift__icon-insta">
+                  <use xlink:href="img/icons.svg#instagram"></use>
+                </svg>
+                Подписаться на Instagram
+              </a>
+              <div class="gift__cond-mess">
+                <p class="gift__cond-text">Написать мне в личку где угодно:</p>
+                <p class="gift__cond-text">"Хочу подарок!"</p>
+              </div>
+            </div>
+          </div>
+          <div class="gift__img"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- popup -->
+    <section class="popup">
+      <div class="popup__wrap">
+        <div class="burger burger__popup cancel" aria-label="кнопка меню">
+          <div class="burger-icon open">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+
+
+        <h3 class="call__form-heading call__form-heading-popup">Закажите консультацию</h3>
+        <form action="https://formspree.io/f/xoqyenvr" method="POST" class="call__form call__form-popup" autocomplete="on">
+          <input type="text"  name="_name" class="form__input form__input-popup" placeholder="Введите ваше имя" data-validate-field="name">
+          <input type="tel" class="form__input form__input-tel form__input-popup" name="_tel" placeholder="Введите номер телефона" data-validate-field="tel" data-validate-field="phone">
+          <input type="text" class="form__input form__input-popup service-popup" name="_service" disabled value="">
+          <button class="btn form__btn form__btn-popup">Заказать консультацию</button>
+        </form>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- footer -->
+  <footer class="footer" id="contacts">
+    <div class="footer__nav-container nav__container">
+      <nav class="footer__nav nav">
+        <ul class="footer__nav-list nav-list">
+          <li class="footer__nav-item nav-item">
+            <a href="#main" class="footer__nav-link nav-link">Главная</a>
+          </li>
+          <li class="footer__nav-item nav-item">
+            <a href="#buy" class="footer__nav-link nav-link">Услуги</a>
+          </li>
+          <li class="footer__nav-item nav-item">
+            <a href="#testimonial" class="footer__nav-link nav-link">Отзывы</a>
+          </li>
+          <li class="footer__nav-item nav-item">
+            <a href="#contacts" class="footer__nav-link nav-link">Контакты</a>
+          </li>
+        </ul>
+        <div class="footer__tel-and-address tel-and-address">
+          <div class="adress-wrap">
+            <svg class="footer__geo-icon geo-icon">
+              <use xlink:href="img/icons.svg#geo"></use>
+            </svg>
+            <address class="address footer__address">г. Санкт-Петербург</address>
+          </div>
+          <a href="tel:+79811512502" class="tel-wrap footer__tel tel">
+            <svg class="footer__tel-icon tel-icon">
+              <use xlink:href="img/icons.svg#phone"></use>
+            </svg>
+            +7 (981) 151-25-02
+          </a>
+        </div>
+      </nav>
+    </div>
+
+    <div class="footer__info">
+      <p class="footer__text">
+        Copyright © 2020–2021 Семейный риэлтор Васильевского острова. Все права защищены.
+      </p>
+      <div class="footer__social-media">
+        <a href="https://vk.com/rieltor_osipova" target="_blank" class="footer__vk">
+          <svg class="footer__vk-icon">
+            <use xlink:href="img/icons.svg#vk"></use>
+          </svg>
+        </a>
+        <a href="https://www.instagram.com/rieltor_osipova/" target="_blank" class="footer__ig">
+          <svg class="footer__ig-icon">
+            <use xlink:href="img/icons.svg#ig-footer"></use>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="js/burger.js"></script>
+  <script src="js/slick.min.js"></script>
+  <script src="js/slick.js"></script>
+  <script src="js/inputmask.min.js"></script>
+  <script src="js/just-validate.min.js"></script>
+  <script>
+    document.querySelectorAll(".form__input-tel").forEach( function(mask){
+      var im = new Inputmask("+7 (999) 999 99 99");
+      im.mask(mask);
+    });
+
+    new JustValidate('.call__form', {
+      rules: {
+        name: {
+          required: true,
+          minLength: 2,
+          maxLength: 30
+        },
+        tel: {
+          required: true,
+          function: (name, value) => {
+            const phone = selector.inputmask.unmaskedvalue()
+            return Number(phone) && phone.length === 10
+          }
+        }
+      },
+      messages: {
+        name: {
+          required: 'Обязательное поле',
+          minLength: 'Имя должно содержать от 2 символов'
+        },
+        tel: {
+          function: 'Некорректный номер',
+          required: 'Обязательное поле'
+        }
+
+      },
+      colorWrong: 'black'
+    });
+
+  </script>
+</body>
+
+</html>
