@@ -56,7 +56,6 @@ ul {
 }
 
 body {
-/*   overflow-x: hidden; */
   font-family: 'Roboto regular';
   font-size: 16px;
   color: var(--text-color);
@@ -96,7 +95,8 @@ img {
   opacity: .5;
 }
 
-.btn:active {
+.btn:active,
+.btn:focus {
   opacity: .5;
   transform: scaleX(0.98);
 }
@@ -126,7 +126,7 @@ img {
   margin: 0 auto;
   padding-top: 20px;
   padding-bottom: 20px;
-  max-width: calc(1171/1440*100vw);
+  width: calc(1171/1440*100vw);
 }
 
 .nav__container::after {
@@ -158,7 +158,9 @@ img {
   transition: opacity .3s ease-in-out;
 }
 
-.nav-link:hover {
+.nav-link:hover,
+.nav-link:active,
+.nav-link:focus {
   opacity: .7;
 }
 
@@ -193,7 +195,9 @@ img {
   height: 16px;
 }
 
-.tel:hover {
+.tel:hover,
+.tel:active,
+.tel:focus {
   opacity: 0.7;
 }
 
@@ -208,10 +212,6 @@ img {
   display: none;
   transition: opcity .3s ease-in-out;
 }
-
-/* .burger:hover {
-  opacity: 0.5;
-} */
 
 .burger-icon {
   width: 30px;
@@ -610,13 +610,11 @@ img {
   transform: rotate(180deg);
 }
 
-.slick-arrow:hover {
+.slick-arrow:hover,
+.slick-arrow:active,
+.slick-arrow:focus  {
   cursor: pointer;
-  opacity: 0.8;
-}
-
-.slick-arrow:active {
-  opacity: 0.8;
+  opacity: 0.5;
 }
 
 /* seller */
@@ -1043,8 +1041,8 @@ img {
 }
 
 .call__content {
-  line-height: 25px;
   margin-bottom: 25px;
+  line-height: 25px;
 }
 
 .call__content:last-child {
@@ -1087,6 +1085,11 @@ img {
 .form__input::placeholder {
   font-size: 16px;
   color: #AF9F9F;
+}
+
+.call__form .js-validate-error-label {
+  margin-bottom: 10px;
+  color: var(--white-color) !important;
 }
 
 .form__btn {
@@ -1200,9 +1203,9 @@ img {
 
 .contract__img {
   flex-basis: calc(470/1440*100%);
-  min-height: 633px;
   margin-right: 135px;
   margin-bottom: 60px;
+  min-height: 633px;
   background: url('../img/contract.png') center center no-repeat;
   background-size: contain;
 
@@ -1280,7 +1283,7 @@ img {
 
 .gift__item-bold,
 .gift__item-bold-percent {
- font-family: 'Roboto bold';
+  font-family: 'Roboto bold';
 }
 
 .gift__item-bold-percent {
@@ -1363,6 +1366,65 @@ img {
   background-size: cover;
 }
 
+/* popup */
+.popup {
+  display: none;
+}
+
+.popup.show {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  display: unset;
+  background-color: rgba(202, 202, 202, .4);
+  z-index: 12;
+}
+
+.popup__wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 15vh auto 0 auto;
+  padding: 30px;
+  border-radius: 10px;
+  width: 30%;
+  background-color: var(--white-color);
+}
+
+.burger__popup {
+  display: flex;
+  align-self: flex-end;
+  margin-bottom: 40px;
+}
+
+.call__form-heading-popup {
+  font-size: 28px;
+}
+
+.popup__wrap .call__form-popup .js-validate-error-label {
+  margin-bottom: 10px;
+  color: black !important;
+}
+
+.call__form-popup {
+  margin-bottom: 20px;
+}
+
+.form__input-popup {
+  border: 2px solid var(--dark-orange);
+}
+
+.form__btn-popup {
+  color: var(--white-color);
+  background-color: var(--dark-orange);
+}
+
 /* footer */
 .footer__nav-link,
 .footer__tel {
@@ -1408,13 +1470,24 @@ img {
   width: 20px;
   height: 20px;
   fill: var(--text-color);
+
+}
+
+.footer__vk,
+.footer__ig {
   transition: opacity .3s ease-in-out;
 }
 
-.footer__vk-icon:hover,
-.footer__ig-icon:hover {
+.footer__vk:hover,
+.footer__ig:hover,
+.footer__vk:active,
+.footer__ig:active,
+.footer__vk:focus,
+.footer__ig:focus {
   opacity: .5;
 }
+
+/* ---------------------------1680-3840--------------------------- */
 
 @media (min-width: 1680px) {
   /* callback form */
@@ -1460,6 +1533,8 @@ img {
   }
 
 }
+
+/* ---------------------------1025-1280--------------------------- */
 
 @media (min-width: 1025px) and (max-width: 1280px) {
   /* about */
@@ -1535,8 +1610,13 @@ img {
   .contract__btn {
     padding: 19px 60px;
   }
+
+  .popup__wrap {
+    width: 50%;
+  }
 }
 
+/* ---------------------------hovers off + nav ----------------------- */
 @media (max-width: 1024px) {
   .burger__hidden-nav {
     position: absolute;
@@ -1594,14 +1674,24 @@ img {
     color: var(--text-color);
   }
 
+  .btn:hover,
+  .nav-link:hover,
+  .tel:hover,
+  .footer__vk:hover,
+  .footer__ig:hover {
+    opacity: 1;
+  }
+
 }
 
+
+/* ---------------------------769-1024--------------------------- */
 @media (min-width: 769px) and (max-width: 1024px) {
 
   /* Header */
   .header__nav-container {
     margin: 0;
-    max-width: 100%;
+    width: 100%;
   }
 
   .header__nav {
@@ -1679,8 +1769,8 @@ img {
   /* slider */
   .slider {
     margin: 0 auto;
-    width: 90vw;
     margin-bottom: 40px;
+    width: 90vw;
   }
 
   .slide-wrapper:not(:last-child) {
@@ -1815,7 +1905,7 @@ img {
   }
 
   .step__btn {
-  padding: 15px 10px;
+    padding: 15px 10px;
   }
 
   /* contract */
@@ -1831,9 +1921,9 @@ img {
 
   .contract__text-content {
     flex-basis: unset;
-    width: 70%;
     padding-top: 0;
     margin-bottom: 30px;
+    width: 70%;
   }
 
   .contract__heading {
@@ -1853,10 +1943,10 @@ img {
 
   .contract__img {
     flex-basis: unset;
-    width: 30vw;
-    min-height: 30vw;
     margin-right: 0;
     margin-bottom: 30px;
+    width: 30vw;
+    min-height: 30vw;
   }
 
 
@@ -1881,6 +1971,10 @@ img {
     margin-bottom: 24px;
   }
 
+  .popup__wrap {
+    width: 60%;
+  }
+
   /* footer */
   .footer__nav-container {
     display: none;
@@ -1891,6 +1985,8 @@ img {
   }
 }
 
+
+/* ---------------------------568-768--------------------------- */
 @media (min-width: 568px) and (max-width: 768px) {
 
   .section__heading {
@@ -1939,11 +2035,11 @@ img {
 
    /* about */
    .about__container {
+    margin-left: 0;
     padding-top: 50px;
     padding-left: 30px;
     padding-right: 30px;
     max-width: 100%;
-    margin-left: 0;
   }
 
   .about__container::before {
@@ -2004,8 +2100,8 @@ img {
   /* slider */
   .slider {
     margin: 0 auto;
-    width: 90vw;
     margin-bottom: 40px;
+    width: 90vw;
   }
 
   .slide-wrapper:not(:last-child) {
@@ -2024,8 +2120,7 @@ img {
 
   /* seller */
   .sell::before {
-    top: -5%
-    ;
+    top: -5%;
     width: 20%;
     height: 15%;
   }
@@ -2186,9 +2281,9 @@ img {
   .start__list {
     justify-content: center;
     margin-bottom: 60px;
-    width: 100vw;
     padding-left: 30px;
     padding-right: 30px;
+    width: 100vw;
   }
 
   .start__item {
@@ -2222,10 +2317,10 @@ img {
 
   .contract__text-content {
     flex-basis: unset;
-    width: 100%;
-    padding-top: 0;
     margin-right: 0;
     margin-bottom: 30px;
+    padding-top: 0;
+    width: 100%;
   }
 
   .contract__heading {
@@ -2267,8 +2362,8 @@ img {
     align-self: center;
     align-items: center;
     margin-right: 0;
-    width: 90%;
     padding-left: 0;
+    width: 90%;
   }
 
   .gift__img {
@@ -2277,6 +2372,10 @@ img {
 
   .gift {
     margin-bottom: 24px;
+  }
+
+  .popup__wrap {
+    width: 90%;
   }
 
   /* footer */
@@ -2290,6 +2389,7 @@ img {
 }
 
 
+/* ---------------------------<568--------------------------- */
 @media (max-width: 567px) {
 
   body {
@@ -2311,7 +2411,6 @@ img {
   /* Header */
   .nav__container {
     padding: 20px;
-    max-width: unset;
     width: 100%;
   }
 
@@ -2424,9 +2523,9 @@ img {
   }
 
   .about__img-wrapper {
+    margin-bottom: 0;
     padding-top: 96.31%;
     min-height: unset;
-    margin-bottom: 0;
   }
 
   .about {
@@ -2436,12 +2535,12 @@ img {
   /* slider */
   .slider {
     margin: 0 auto;
-    width: 90vw;
     margin-bottom: 40px;
+    width: 90vw;
   }
 
   .slide-wrapper:not(:last-child) {
-    margin-right: 0px;
+    margin-right: 10px;
   }
 
   .slide__heading,
@@ -2528,7 +2627,7 @@ img {
   }
 
   .service__slide-wrapper:not(:last-child) {
-    margin-right: 0;
+    margin-right: 10px;
   }
 
   /* pros and cons */
@@ -2550,8 +2649,8 @@ img {
   .pros__list {
     display: flex;
     flex-direction: column;
-    width: 100%;
     padding: 0 15px;
+    width: 100%;
   }
 
   .pros__item {
@@ -2635,9 +2734,9 @@ img {
   .start__list {
     justify-content: center;
     margin-bottom: 40px;
-    width: 100%;
     padding-left: 15px;
     padding-right: 15px;
+    width: 100%;
   }
 
   .start__heading {
@@ -2684,10 +2783,10 @@ img {
 
   .contract__text-content {
     flex-basis: unset;
-    width: 100%;
     padding-top: 0;
     margin-right: 0;
     margin-bottom: 30px;
+    width: 100%;
   }
 
   .contract__heading {
@@ -2729,9 +2828,9 @@ img {
     align-self: center;
     align-items: center;
     padding-top: 20px;
+    padding-left: 0;
     margin-right: 0;
     width: 90%;
-    padding-left: 0;
   }
 
   .gift__item {
@@ -2763,6 +2862,10 @@ img {
 
   .gift {
     margin-bottom: 24px;
+  }
+
+  .popup__wrap {
+    width: 90%;
   }
 
   /* footer */
