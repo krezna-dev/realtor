@@ -16,11 +16,22 @@ window.addEventListener('DOMContentLoaded', function() {
     slideBtn.addEventListener('click', function(event) {
       const path = event.currentTarget.dataset.path;
       const service = document.querySelector(`[data-target="${path}"]`).textContent;
-      console.log(path, service)
       servicePopup.value = service;
     });
-
+    
   });
 
+  document.querySelectorAll('.popup-btn').forEach(function(popupBtn){
+    popupBtn.addEventListener('click', function() {
+      popup.classList.add('show');
+    });
+  });
+
+  document.querySelectorAll('.popup-btn').forEach(function(popupBtn) {
+    popupBtn.addEventListener('click', function(event) {
+
+      servicePopup.value = 'Консультация';
+    });
+  });
 })
 

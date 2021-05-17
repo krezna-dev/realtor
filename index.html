@@ -7,8 +7,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/normalize.css" type="text/css">
   <link rel="stylesheet" href="css/style.css" type="text/css">
-  <link rel="shortcut icon" href="img/osipova.ico" type="image/x-icon">
-  <script src="js/popup.js"></script>
   <title>Риэлтор В.О | Риэлтор Екатерина Осипова | Санкт-Петербург</title>
 </head>
 
@@ -51,9 +49,6 @@
             <li class="burger__nav-item nav-item">
               <a href="#testimonial" class="burger__nav-link nav-link">Отзывы</a>
             </li>
-            <li class="burger__nav-item nav-item">
-              <a href="#contacts" class="burger__nav-link nav-link">Контакты</a>
-            </li>
           </ul>
           <div class="burger__tel-and-address tel-and-address">
             <div class="adress-wrap burger__adress-wrap">
@@ -62,7 +57,7 @@
               </svg>
               <address class="address burger__address">г. Санкт-Петербург</address>
             </div>
-            <a href="tel:+79811512502" class="tel-wrap burger__tel tel">
+            <a href="tel:+79811512502" class="tel-wrap burger__tel tel" aria-label="ссылка позвонить">
               <svg class="burger__tel-icon tel-icon">
                 <use xlink:href="img/icons.svg#phone"></use>
               </svg>
@@ -81,9 +76,6 @@
           <li class="header__nav-item nav-item">
             <a href="#testimonial" class="header__nav-link nav-link">Отзывы</a>
           </li>
-          <li class="header__nav-item nav-item">
-            <a href="#contacts" class="header__nav-link nav-link">Контакты</a>
-          </li>
         </ul>
         <div class="header__tel-and-address tel-and-address" aria-label="навигация телефон">
           <div class="adress-wrap">
@@ -92,7 +84,7 @@
             </svg>
             <address class="address header__address">г. Санкт-Петербург</address>
           </div>
-          <a href="tel:+79811512502" class="tel-wrap header__tel tel">
+          <a href="tel:+79811512502" class="tel-wrap header__tel tel" aria-label="ссылка позвонить">
             <svg class="header__tel-icon tel-icon">
               <use xlink:href="img/icons.svg#phone"></use>
             </svg>
@@ -110,7 +102,8 @@
       <div class="hero__container">
         <h1 class="hero__heading">Семейный риэлтор Васильевского острова</h1>
         <p class="hero__content text">Тщательный поиск для покупателей, и скорая продажа для продавцов!</p>
-        <a href="#callback-form" class="hero__btn btn" aria-label="кнопка переход в форму обратной связи">Записаться на консультацию</a>
+        <button class="hero__btn btn popup-btn" aria-label="кнопка переход в форму обратной связи">Записаться на
+          консультацию</button>
       </div>
     </section>
 
@@ -132,14 +125,16 @@
                   Покупая квартиру вместе со мной, вы получите тщательный и быстрый поиск квартиры по любым вашим
                   запросам
                 </p>
-                <a href="#buy" class="btn choice__buy-btn" aria-label="кнопка переход в услуги для покупателя">Хочу жить на В.О</a>
+                <button class="btn choice__buy-btn popup-btn" aria-label="кнопка переход в форму обратной связи">Хочу
+                  жить на В.О</button>
               </div>
               <div class="choice__sell">
                 <p class="choice__sell-content">
                   Продавая квартиру, вы получите оперативность и результат! За счет того, что я живу на В. О. - я
                   быстро могу предоставить просмотр объекта и проанализировать рынок недвижимости
                 </p>
-                <a href="#sell" class="btn choice__sell-btn" aria-label="кнопка переход в услуги для продавца">Продать квартиру на В.О</a>
+                <button class="btn choice__sell-btn" aria-label="кнопка переход в форму обратной связи">Продать квартиру
+                  на В.О</button>
               </div>
             </div>
           </div>
@@ -157,22 +152,21 @@
 
         <div class="slide-wrapper">
           <div class="slide__img-heading">
-            <img src="img/slide1.jpg" alt="услуга" class="slide__img">
+            <img src="img/slide1.jpg" alt="изображение к услуге" class="slide__img">
             <h3 class="slide__heading" data-target="one">Поиск недвижимости</h3>
           </div>
           <p class="slide__content">
             Поиск обьекта без сопровождения м большим количеством комнат, а так же
             коммерческое помещение по договоренности</p>
           <div class="slide__price-button">
-            <h3 class="slide__price">20 000 	&mdash; 50 000 руб.
+            <h3 class="slide__price">20 000 &mdash; 50 000 руб.
             </h3>
             <button class="btn slide__btn" data-path="one" aria-label="кнопка заказать услугу">Заказать</button>
           </div>
         </div>
-
         <div class="slide-wrapper">
           <div class="slide__img-heading">
-            <img src="img/slide2.jpg" alt="услуга" class="slide__img">
+            <img src="img/slide2.jpg" alt="изображение к услуге" class="slide__img">
             <h3 class="slide__heading" data-target="two">Поиск недвижимости</h3>
           </div>
           <p class="slide__content">
@@ -181,14 +175,14 @@
           </p>
           <div class="slide__price-button">
             <h3 class="slide__price">
-              20 000 	&mdash; 50 000 руб.
+              20 000 &mdash; 50 000 руб.
             </h3>
             <button class="btn slide__btn" aria-label="кнопка заказать услугу" data-path="two">Заказать</button>
           </div>
         </div>
         <div class="slide-wrapper">
           <div class="slide__img-heading">
-            <img src="img/slide3.jpg" alt="услуга" class="slide__img">
+            <img src="img/slide3.jpg" alt="изображение к услуге" class="slide__img">
             <h3 class="slide__heading" data-target="three">Поиск недвижимости</h3>
           </div>
           <p class="slide__content">
@@ -197,14 +191,14 @@
           </p>
           <div class="slide__price-button">
             <h3 class="slide__price">
-              20 000 	&mdash; 50 000 руб.
+              20 000 &mdash; 50 000 руб.
             </h3>
             <button class="btn slide__btn" aria-label="кнопка заказать услугу" data-path="three">Заказать</button>
           </div>
         </div>
         <div class="slide-wrapper">
           <div class="slide__img-heading">
-            <img src="img/slide3.jpg" alt="услуга" class="slide__img">
+            <img src="img/slide3.jpg" alt="изображение к услуге" class="slide__img">
             <h3 class="slide__heading" data-target="four">Поиск недвижимости</h3>
           </div>
           <p class="slide__content">
@@ -213,13 +207,13 @@
           </p>
           <div class="slide__price-button">
             <h3 class="slide__price">
-              20 000 	&mdash; 50 000 руб.
+              20 000 &mdash; 50 000 руб.
             </h3>
             <button class="btn slide__btn" aria-label="кнопка заказать услугу" data-path="four">Заказать</button>
           </div>
         </div>
       </div>
-      <a href="#callback-form" class="btn buy__btn">Получить консультацию по услугам</a>
+      <button class="btn buy__btn popup-btn" aria-label="кнопка заказать консультацию">Получить консультацию по услугам</button>
     </section>
 
     <!-- seller -->
@@ -230,7 +224,7 @@
 
         <div class="slide-wrapper">
           <div class="slide__img-heading">
-            <img src="img/slide4.jpg" alt="услуга" class="slide__img">
+            <img src="img/slide4.jpg" alt="изображение к услуге" class="slide__img">
             <h3 class="slide__heading" data-target="five">Поиск недвижимости</h3>
           </div>
           <p class="slide__content">
@@ -239,15 +233,14 @@
           </p>
           <div class="slide__price-button">
             <h3 class="slide__price">
-              20 000 	&mdash; 50 000 руб.
+              20 000 &mdash; 50 000 руб.
             </h3>
             <button class="btn slide__btn" aria-label="кнопка заказать услугу" data-path="five">Заказать</button>
           </div>
         </div>
-
         <div class="slide-wrapper">
           <div class="slide__img-heading">
-            <img src="img/slide5.jpg" alt="услуга" class="slide__img">
+            <img src="img/slide5.jpg" alt="изображение к услуге" class="slide__img">
             <h3 class="slide__heading" data-target="six">Поиск недвижимости</h3>
           </div>
           <p class="slide__content">
@@ -256,14 +249,14 @@
           </p>
           <div class="slide__price-button">
             <h3 class="slide__price">
-              20 000 	&mdash; 50 000 руб.
+              20 000 &mdash; 50 000 руб.
             </h3>
             <button class="btn slide__btn" aria-label="кнопка заказать услугу" data-path="six">Заказать</button>
           </div>
         </div>
         <div class="slide-wrapper">
           <div class="slide__img-heading">
-            <img src="img/slide6.jpg" alt="услуга" class="slide__img">
+            <img src="img/slide6.jpg" alt="изображение к услуге" class="slide__img">
             <h3 class="slide__heading" data-target="seven">Поиск недвижимости</h3>
           </div>
           <p class="slide__content">
@@ -272,14 +265,14 @@
           </p>
           <div class="slide__price-button">
             <h3 class="slide__price">
-              20 000 	&mdash; 50 000 руб.
+              20 000 &mdash; 50 000 руб.
             </h3>
             <button class="btn slide__btn" aria-label="кнопка заказать услугу" data-path="seven">Заказать</button>
           </div>
         </div>
         <div class="slide-wrapper">
           <div class="slide__img-heading">
-            <img src="img/slide6.jpg" alt="услуга" class="slide__img">
+            <img src="img/slide6.jpg" alt="изображение к услуге" class="slide__img">
             <h3 class="slide__heading" data-target="eight">Поиск недвижимости</h3>
           </div>
           <p class="slide__content">
@@ -288,13 +281,13 @@
           </p>
           <div class="slide__price-button">
             <h3 class="slide__price">
-              20 000 	&mdash; 50 000 руб.
+              20 000 &mdash; 50 000 руб.
             </h3>
             <button class="btn slide__btn" aria-label="кнопка заказать услугу" data-path="eight">Заказать</button>
           </div>
         </div>
       </div>
-      <a href="#callback-form" class="btn buy__btn sell__btn">Получить консультацию по услугам</a>
+      <button class="btn buy__btn sell__btn popup-btn" aria-label="кнопка заказать консультацию">Получить консультацию по услугам</button>
     </section>
 
     <!-- test -->
@@ -306,7 +299,7 @@
       <p class="test__text">
         Пройди тест в Вконтакте! <br>Просто отвечайте на вопросы и рассчитайте стоимость услуг
       </p>
-      <a href="#" class="btn test__btn">Пройти тест</a>
+      <a href="#" class="btn test__btn" aria-label="ссылка на тест">Пройти тест</a>
     </section>
 
     <!-- advantages -->
@@ -322,31 +315,31 @@
             За счет качественной подготовки и четкого планирования</p>
         </li>
         <li class="adv__item">
-          <img src="img/Frame (1).svg" alt="Документ" class="adv__img">
+          <img src="img/Frame1.svg" alt="Документ" class="adv__img">
           <h3 class="adv__heading-card">Риски сведены к нулю</h3>
           <p class="adv__content">Провожу проверку обоих сторон. Прошу предоставить все документы. И заказываю
             юридические выписки об объекте и собственнике</p>
         </li>
         <li class="adv__item">
-          <img src="img/Frame (2).svg" alt="Вышка" class="adv__img">
+          <img src="img/Frame2.svg" alt="Вышка" class="adv__img">
           <h3 class="adv__heading-card">Знание рынка СПБ</h3>
           <p class="adv__content">Подберу квартиру на вторичке по любым вашим желаниям. Проанализирую цены и выявлю
             самую выгодную для покупки или
             для продажи</p>
         </li>
         <li class="adv__item">
-          <img src="img/Frame (3).svg" alt="Часы" class="adv__img">
+          <img src="img/Frame3.svg" alt="Часы" class="adv__img">
           <h3 class="adv__heading-card">Метод срочной продажи</h3>
           <p class="adv__content">Владею технологией аукционного метода продажи квартиры. Это позволяет продать быстро и
             дорого!</p>
         </li>
         <li class="adv__item">
-          <img src="img/Frame (4).svg" alt="Интернет" class="adv__img">
+          <img src="img/Frame4.svg" alt="Интернет" class="adv__img">
           <h3 class="adv__heading-card">Более 50 интернет-площадок</h3>
           <p class="adv__content">Пользуюсь TOPLAb - системой, которая помогает загужать объявления одним кликом.</p>
         </li>
         <li class="adv__item">
-          <img src="img/Frame (5).svg" alt="Дом" class="adv__img">
+          <img src="img/Frame5.svg" alt="Дом" class="adv__img">
           <h3 class="adv__heading-card">Грамотный Хоумстейджинг</h3>
           <p class="adv__content">Подготовлю квартиру к просмотрам и показу в объявлениях. Звонки только от реальных
             покупателей.</p>
@@ -361,31 +354,31 @@
             За счет качественной подготовки и четкого планирования</p>
         </div>
         <div class="adv__item">
-          <img src="img/Frame (1).svg" alt="Документ" class="adv__img">
+          <img src="img/Frame1.svg" alt="Документ" class="adv__img">
           <h3 class="adv__heading-card">Риски сведены к нулю</h3>
           <p class="adv__content">Провожу проверку обоих сторон. Прошу предоставить все документы. И заказываю
             юридические выписки об объекте и собственнике</p>
         </div>
         <div class="adv__item">
-          <img src="img/Frame (2).svg" alt="Вышка" class="adv__img">
+          <img src="img/Frame2.svg" alt="Вышка" class="adv__img">
           <h3 class="adv__heading-card">Знание рынка СПБ</h3>
           <p class="adv__content">Подберу квартиру на вторичке по любым вашим желаниям. Проанализирую цены и выявлю
             самую выгодную для покупки или
             для продажи</p>
         </div>
         <div class="adv__item">
-          <img src="img/Frame (3).svg" alt="Часы" class="adv__img">
+          <img src="img/Frame3.svg" alt="Часы" class="adv__img">
           <h3 class="adv__heading-card">Метод срочной продажи</h3>
           <p class="adv__content">Владею технологией аукционного метода продажи квартиры. Это позволяет продать быстро и
             дорого!</p>
         </div>
         <div class="adv__item">
-          <img src="img/Frame (4).svg" alt="Интернет" class="adv__img">
+          <img src="img/Frame4.svg" alt="Интернет" class="adv__img">
           <h3 class="adv__heading-card">Более 50 интернет-площадок</h3>
           <p class="adv__content">Пользуюсь TOPLAb - системой, которая помогает загужать объявления одним кликом.</p>
         </div>
         <div class="adv__item">
-          <img src="img/Frame (5).svg" alt="Дом" class="adv__img">
+          <img src="img/Frame5.svg" alt="Дом" class="adv__img">
           <h3 class="adv__heading-card">Грамотный Хоумстейджинг</h3>
           <p class="adv__content">Подготовлю квартиру к просмотрам и показу в объявлениях. Звонки только от реальных
             покупателей.</p>
@@ -403,7 +396,7 @@
 
         <div class="service__slide-wrapper">
           <div class="service__slide-img-heading">
-            <img src="img/photograph.jpg" alt="услуга" class="service__slide-img">
+            <img src="img/photograph.jpg" alt="Фотограф" class="service__slide-img">
             <h3 class="service__slide-heading">Фотограф</h3>
           </div>
           <p class="service__slide-content">
@@ -413,7 +406,7 @@
 
         <div class="service__slide-wrapper">
           <div class="service__slide-img-heading">
-            <img src="img/broker.jpg" alt="услуга" class="service__slide-img">
+            <img src="img/broker.jpg" alt="Ипотечный брокер" class="service__slide-img">
             <h3 class="service__slide-heading">Ипотечный брокер</h3>
           </div>
           <p class="service__slide-content">
@@ -423,7 +416,7 @@
 
         <div class="service__slide-wrapper">
           <div class="service__slide-img-heading">
-            <img src="img/lawyer.jpg" alt="услуга" class="service__slide-img">
+            <img src="img/lawyer.jpg" alt="Юрист" class="service__slide-img">
             <h3 class="service__slide-heading">Юрист</h3>
           </div>
           <p class="service__slide-content">
@@ -466,7 +459,8 @@
                 <use xlink:href="img/icons.svg#disadvantage"></use>
               </svg>
               <p class="pros__content-regular pros-text">
-                Обращаясь в агентство, к вам могут прикрепить агента-новичка, который своей безграмотностью может провести
+                Обращаясь в агентство, к вам могут прикрепить агента-новичка, который своей безграмотностью может
+                провести
                 сделку некачественно
               </p>
             </div>
@@ -487,7 +481,8 @@
                 <use xlink:href="img/icons.svg#disadvantage"></use>
               </svg>
               <p class="pros__content-regular pros-text">
-                Чаще всего в агентстве для каждой задачи есть определенный агент. При продаже квартиры вы будете работать
+                Чаще всего в агентстве для каждой задачи есть определенный агент. При продаже квартиры вы будете
+                работать
                 с одним, при покупке - с другим
               </p>
             </div>
@@ -524,7 +519,7 @@
             </div>
           </li>
         </ul>
-        <a href="#callback-form" class="btn pros__btn">Получить консультацию по услугам</a>
+        <button class="btn pros__btn popup-btn" aria-label="кнопка заказать консультацию">Получить консультацию по услугам</button>
       </div>
     </section>
 
@@ -611,7 +606,7 @@
         </div>
       </div>
 
-      <a href="https://vk.com/topic-187878494_39942357" target="_blank" class="btn testimonial__btn">Хочу также!</a>
+      <a href="https://vk.com/topic-187878494_39942357" target="_blank" class="btn testimonial__btn" aria-label="ссылка для перехода на отзывы">Хочу также!</a>
     </section>
 
     <!-- callback form -->
@@ -637,9 +632,13 @@
           </p>
 
           <form action="https://formspree.io/f/xoqyenvr" method="POST" class="call__form" autocomplete="on">
-            <input type="text"  name="_name" class="form__input" placeholder="Введите ваше имя" data-validate-field="name">
-            <input type="tel" class="form__input form__input-tel" name="_tel" placeholder="Введите номер телефона" data-validate-field="tel" data-validate-field="phone">
-            <button class="btn form__btn">Заказать консультацию</button>
+            <label for="name" class="visually-hidden">Введите ваше имя</label>
+            <input id="name" type="text" name="_name" class="form__input" placeholder="Введите ваше имя"
+              data-validate-field="name">
+            <label for="tel" class="visually-hidden">Введите номер телефона</label>
+            <input type="tel" id="tel" class="form__input form__input-tel" name="_tel" placeholder="Введите номер телефона"
+              data-validate-field="tel" data-validate-field="phone">
+            <button class="btn form__btn" aria-label="кнопка заказать консультацию">Заказать консультацию</button>
           </form>
         </div>
       </div>
@@ -651,7 +650,7 @@
       <ul class="start__list">
         <li class="start__item">
           <span class="start__step">1</span>
-          <a href="#сallback-form" class="btn step__btn">Свяжитесь со мной</a>
+          <button class="btn step__btn popup-btn" aria-label="кнопка заказать консультацию">Свяжитесь со мной</button>
         </li>
         <li class="start__item">
           <span class="start__step">2</span>
@@ -703,9 +702,9 @@
             процесс внедрения и модернизации модели развития. Повседневная практика показывает, что сложившаяся
             структура организации играет важную роль в формировании новых предложений.
           </p>
-          <a href="#" download class="btn contract__btn">Получить пример договора</a>
+          <a href="#" download class="btn contract__btn" aria-label="кнопка скачивание договора">Получить пример договора</a>
         </div>
-        <div class="contract__img">
+        <div class="contract__img" aria-label="изображение договора">
         </div>
       </div>
     </section>
@@ -731,14 +730,14 @@
             </ul>
             <div class="gift__conditions">
               <h4 class="gift__cond-heading">Всё, что от вас требуется сделать:</h4>
-              <a href="https://vk.com/rieltor_osipova" target="_blank" class="gift__link gift__link-vk  btn">
+              <a href="https://vk.com/rieltor_osipova" target="_blank" class="gift__link gift__link-vk  btn" aria-label="ссылка на группу вконтакте">
                 <svg class="gift__icon-vk">
                   <use xlink:href="img/icons.svg#vk"></use>
                 </svg>
                 Подписаться на группу в Вконтакте
               </a>
               <a href="https://www.instagram.com/rieltor_osipova/" target="_blank"
-                class="gift__link gift__link-instagram btn">
+                class="gift__link gift__link-instagram btn" aria-label="ссылка на инстаграм">
                 <svg class="gift__icon-insta">
                   <use xlink:href="img/icons.svg#instagram"></use>
                 </svg>
@@ -750,7 +749,7 @@
               </div>
             </div>
           </div>
-          <div class="gift__img"></div>
+          <div class="gift__img" aria-label="изображение"></div>
         </div>
       </div>
     </section>
@@ -758,7 +757,7 @@
     <!-- popup -->
     <section class="popup">
       <div class="popup__wrap">
-        <div class="burger burger__popup cancel" aria-label="кнопка меню">
+        <div class="burger burger__popup cancel" aria-label="кнопка закрыть меню">
           <div class="burger-icon open">
             <span></span>
             <span></span>
@@ -769,10 +768,15 @@
 
 
         <h3 class="call__form-heading call__form-heading-popup">Закажите консультацию</h3>
-        <form action="https://formspree.io/f/xoqyenvr" method="POST" class="call__form call__form-popup" autocomplete="on">
-          <input type="text"  name="_name" class="form__input form__input-popup" placeholder="Введите ваше имя" data-validate-field="name">
-          <input type="tel" class="form__input form__input-tel form__input-popup" name="_tel" placeholder="Введите номер телефона" data-validate-field="tel" data-validate-field="phone">
-          <input type="text" class="form__input form__input-popup service-popup" name="_service" disabled value="">
+        <form action="https://formspree.io/f/xoqyenvr" method="POST" class="call__form call__form-popup"
+          autocomplete="on">
+          <label for="name-popup" class="visually-hidden">Введите ваше имя</label>
+          <input id='name-popup' type="text" name="_name" class="form__input form__input-popup" placeholder="Введите ваше имя"
+            data-validate-field="name">
+          <label for="tel-popup" class="visually-hidden">Введите ваше имя</label>
+          <input id="tel-popup" type="tel" class="form__input form__input-tel form__input-popup" name="_tel"
+            placeholder="Введите номер телефона" data-validate-field="tel" data-validate-field="phone">
+          <input type="text" class="form__input form__input-popup service-popup" name="_service" hidden value="">
           <button class="btn form__btn form__btn-popup">Заказать консультацию</button>
         </form>
 
@@ -793,9 +797,6 @@
           </li>
           <li class="footer__nav-item nav-item">
             <a href="#testimonial" class="footer__nav-link nav-link">Отзывы</a>
-          </li>
-          <li class="footer__nav-item nav-item">
-            <a href="#contacts" class="footer__nav-link nav-link">Контакты</a>
           </li>
         </ul>
         <div class="footer__tel-and-address tel-and-address">
@@ -833,14 +834,16 @@
       </div>
     </div>
   </footer>
+
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="js/burger.js"></script>
   <script src="js/slick.min.js"></script>
   <script src="js/slick.js"></script>
   <script src="js/inputmask.min.js"></script>
   <script src="js/just-validate.min.js"></script>
+  <script src="js/popup.js"></script>
   <script>
-    document.querySelectorAll(".form__input-tel").forEach( function(mask){
+    document.querySelectorAll(".form__input-tel").forEach(function (mask) {
       var im = new Inputmask("+7 (999) 999 99 99");
       im.mask(mask);
     });

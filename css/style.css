@@ -506,7 +506,6 @@ img {
 
 .slide-wrapper {
   display: flex;
-  flex-basis: 32.5%;
   flex-direction: column;
   justify-content: space-between;
   border: 1px solid #D4D5D9;
@@ -608,6 +607,30 @@ img {
   background: url('../img/slider-nav.svg') center center no-repeat;
   background-size: contain;
   transform: rotate(180deg);
+}
+
+.slick-dots {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.slick-dots li:not(:last-child) {
+  margin-right: 10px;
+}
+
+.slick-dots button {
+  padding: 6.5px;
+  border: 0;
+  border-radius: 10px;
+  font-size: 0;
+  background-color: #cacaca;
+  transition: background-color .3s ease-in-out;
+}
+
+.slick-dots .slick-active button {
+  background-color: var(--dark-orange);
 }
 
 .slick-arrow:hover,
@@ -1064,7 +1087,7 @@ img {
 }
 
 .call__form-descr {
-  margin-bottom: 33px;
+  margin-bottom: 17px;
   line-height: 23px;
 }
 
@@ -1074,12 +1097,21 @@ img {
   width: 100%;
 }
 
+.visually-hidden {
+  visibility: hidden;
+}
+
 .form__input {
   margin-bottom: 20px;
   padding: 20px 30px;
   border: none;
   border-radius: 0;
   outline: none;
+}
+
+#name,
+#name-popup {
+  margin-bottom: 4px;
 }
 
 .form__input::placeholder {
@@ -1446,6 +1478,7 @@ img {
 .footer__info {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   width: calc(1170/1440*100%);
   margin: 0 auto;
   margin-bottom: 24px;
@@ -1470,7 +1503,6 @@ img {
   width: 20px;
   height: 20px;
   fill: var(--text-color);
-
 }
 
 .footer__vk,
@@ -1627,7 +1659,7 @@ img {
     flex-direction: column;
     padding: 20px 30px 30px 30px;
     width: 50vw;
-    height: auto;
+    height: 100vh;
     background-color: var(--white-color);
     transition: transform, 0.5s ease-in-out;
     transform: translateX(-101vw);
@@ -1680,6 +1712,22 @@ img {
   .footer__vk:hover,
   .footer__ig:hover {
     opacity: 1;
+  }
+
+  .footer__info {
+    align-items: center;
+  }
+  
+  .footer__vk-icon {
+    margin-right: 5px;
+  }
+
+  .footer__vk-icon,
+  .footer__ig-icon {
+    padding: 10px;
+    width: 40px;
+    height: 40px;
+    fill: var(--text-color);
   }
 
 }
@@ -2610,6 +2658,7 @@ img {
 
   .adv__slider-mobile {
     display: flex;
+    flex-direction: column;
     margin-bottom: 0;
   }
 

@@ -16,7 +16,8 @@ $(document).ready(function() {
         breakpoint: 1025,
         settings: {
           slidesToShow: 2.5,
-          arrows: false
+          arrows: false,
+          dots: true
         }
       },
 
@@ -24,7 +25,8 @@ $(document).ready(function() {
         breakpoint: 920,
         settings: {
           slidesToShow: 2,
-          arrows: false
+          arrows: false,
+          dots: true
         }
       },
 
@@ -32,7 +34,8 @@ $(document).ready(function() {
         breakpoint: 630,
         settings: {
           slidesToShow: 1.5,
-          arrows: false
+          arrows: false,
+          dots: true
         }
       },
 
@@ -40,7 +43,8 @@ $(document).ready(function() {
         breakpoint: 460,
         settings: {
           slidesToShow: 1,
-          arrows: false
+          arrows: false,
+          dots: true
         }
       }
     ]
