@@ -464,6 +464,10 @@ img {
   padding: 16px 25px 15px 25px;
 }
 
+.about-choice-slider {
+  display: none;
+}
+
 .about__img-wrapper {
   position: relative;
   margin-bottom: 140px;
@@ -1566,6 +1570,29 @@ img {
 
 }
 
+@media (max-width: 1280px) {
+  header {
+    display: none;
+  }
+
+  .about__choice {
+    display: none;
+  }
+
+  .about-choice-slider {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    width: 100%;
+    height: auto;
+  }
+  
+  .choice-slide {
+    flex-basis: 100%;
+    align-items: flex-start;
+  }
+}
+
 /* ---------------------------1025-1280--------------------------- */
 
 @media (min-width: 1025px) and (max-width: 1280px) {
@@ -1574,7 +1601,8 @@ img {
     padding-top: 50px;
     padding-left: 30px;
     padding-right: 30px;
-    max-width: 100%;
+    max-width: unset;
+    width: 100%;
     margin-left: 0;
   }
 
@@ -1589,11 +1617,11 @@ img {
 
   .about__inner-container {
     align-items: stretch;
-    max-width: 100%;
+    width: 100%;
     left: 0;
   }
 
-  .about__choice {
+  /* .about__choice {
     flex-direction: column;
     margin-bottom: 20px;
   }
@@ -1614,7 +1642,7 @@ img {
     margin-bottom: 15px;
     max-width: unset;
   }
-
+ */
   .about__img-wrapper {
     margin-bottom: 30px;
   }
@@ -2637,7 +2665,6 @@ img {
   /* advantages */
   .adv__list {
     display: none;
-    width: 100%;
   }
 
   .adv__item {

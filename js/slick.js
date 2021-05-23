@@ -51,3 +51,13 @@ $(document).ready(function() {
   })
 });
 
+$(document).ready(function() {
+  $('.about-choice-slider').slick({
+    arrows: true,
+    dots: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    infinite: true
+  })
+});
+
