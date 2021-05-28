@@ -52,12 +52,12 @@ $(document).ready(function() {
 });
 
 $(document).ready(function() {
-  $('.about-choice-slider').slick({
-    arrows: true,
+  $('.about__slider').slick({
+    arrows: false,
     dots: true,
     slidesToShow: 1,
     slidesToScroll: 1,
-    infinite: true
+    infinite: false
   })
 });
 
