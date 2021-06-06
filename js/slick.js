@@ -3,7 +3,7 @@ $(document).ready(function() {
     arrows: true,
     slidesToShow: 3,
     slidesToScroll: 1,
-    infinite: true,
+    infinite: false,
     responsive: [
       {
         breakpoint: 1100,
