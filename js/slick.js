@@ -3,12 +3,14 @@ $(document).ready(function() {
     arrows: true,
     slidesToShow: 3,
     slidesToScroll: 1,
-    infinite: true,
+    infinite: false,
     responsive: [
       {
         breakpoint: 1100,
         settings: {
-          slidesToShow: 2.5
+          slidesToShow: 2.5,
+          arrows: true,
+          dots: false
         }
       },
 
@@ -52,12 +54,12 @@ $(document).ready(function() {
 });
 
 $(document).ready(function() {
-  $('.about-choice-slider').slick({
-    arrows: true,
+  $('.about__slider').slick({
+    arrows: false,
     dots: true,
     slidesToShow: 1,
     slidesToScroll: 1,
-    infinite: true
+    infinite: false
   })
 });
 

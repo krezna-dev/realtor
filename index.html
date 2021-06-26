@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="format-detection" content="telephone=no" />
   <meta name="description" content="Семейный риэлтор Васильевского острова">
+  <meta name="robots" content="index, follow"/>
   <link rel="stylesheet" href="css/normalize.css" type="text/css">
   <link rel="stylesheet" href="css/style.css" type="text/css">
   <title>Риэлтор В.О | Риэлтор Екатерина Осипова | Санкт-Петербург</title>
@@ -18,56 +19,15 @@
   <header class="header">
 
     <div class="nav__container header__nav-container">
+      
 
       <nav class="header__nav nav">
-
-        <!-- burger -->
-        <div id="burger" class="burger" aria-label="кнопка меню">
-          <div id="burger-icon" class="burger-icon">
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-          </div>
+        <div class="burger" id="burger" aria-label="кнопка меню">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
         </div>
-
-        <!-- burger-hidden -->
-        <nav id="menu" class="burger__hidden-nav" aria-label="меню">
-          <div class="burger burger__nav-item" aria-label="кнопка меню">
-            <div class="burger-icon open">
-              <span></span>
-              <span></span>
-              <span></span>
-              <span></span>
-            </div>
-          </div>
-          <ul class="burger__nav-list nav-list">
-            <li class="burger__nav-item nav-item">
-              <a href="#main" class="burger__nav-link nav-link">Главная</a>
-            </li>
-            <li class="burger__nav-item nav-item">
-              <a href="#buy" class="burger__nav-link nav-link">Услуги</a>
-            </li>
-            <li class="burger__nav-item nav-item">
-              <a href="#testimonial" class="burger__nav-link nav-link">Отзывы</a>
-            </li>
-          </ul>
-          <div class="burger__tel-and-address tel-and-address">
-            <div class="adress-wrap burger__adress-wrap">
-              <svg class="burger__geo-icon geo-icon">
-                <use xlink:href="img/icons.svg#geo"></use>
-              </svg>
-              <address class="address burger__address">г. Санкт-Петербург</address>
-            </div>
-            <a href="tel:+79811512502" class="tel-wrap burger__tel tel" aria-label="ссылка позвонить">
-              <svg class="burger__tel-icon tel-icon">
-                <use xlink:href="img/icons.svg#phone"></use>
-              </svg>
-              +7 (981) 151-25-02
-            </a>
-          </div>
-        </nav>
-
         <ul class="header__nav-list nav-list" aria-label="навигация">
           <li class="header__nav-item nav-item">
             <a href="#main" class="header__nav-link nav-link">Главная</a>
@@ -94,6 +54,35 @@
           </a>
         </div>
       </nav>
+      
+      <nav class="burger__nav" id="burger__nav">
+        <ul class="burger__nav-list nav-list" aria-label="навигация">
+          <li class="burger__nav-item nav-item">
+            <a href="#main" class="burger__nav-link nav-link">Главная</a>
+          </li>
+          <li class="burger__nav-item nav-item">
+            <a href="#buy" class="burger__nav-link nav-link">Услуги</a>
+          </li>
+          <li class="burger__nav-item nav-item">
+            <a href="#testimonial" class="burger__nav-link nav-link">Отзывы</a>
+          </li>
+        </ul>
+        <div class="burger__tel-and-address tel-and-address" aria-label="навигация телефон">
+          <div class="burger__address-wrap adress-wrap">
+            <svg class="burger__geo-icon geo-icon">
+              <use xlink:href="img/icons.svg#geo"></use>
+            </svg>
+            <address class="address burger__address">г. Санкт-Петербург</address>
+          </div>
+          <a href="tel:+79811512502" class="tel-wrap burger__tel tel" aria-label="ссылка позвонить">
+            <svg class="burger__tel-icon tel-icon">
+              <use xlink:href="img/icons.svg#phone"></use>
+            </svg>
+            +7 (981) 151-25-02
+          </a>
+        </div>
+      </nav>
+
     </div>
   </header>
 
@@ -140,30 +129,25 @@
               </div>
             </div>
 
-            <div class="about__choice about-choice-slider">
-              <div class="choice__buy choice-slide">
-                <p class="choice__buy-content">
-                  Покупая квартиру вместе со мной, вы получите тщательный и быстрый поиск квартиры по любым вашим
-                  запросам
-                </p>
-                <button class="btn choice__buy-btn popup-btn" aria-label="кнопка переход в форму обратной связи">Хочу
-                  жить на В.О</button>
-              </div>
-              <div class="choice__sell choice-slide">
-                <p class="choice__sell-content">
-                  Продавая квартиру, вы получите оперативность и результат! За счет того, что я живу на В. О. - я
-                  быстро могу предоставить просмотр объекта и проанализировать рынок недвижимости
-                </p>
-                <button class="btn choice__sell-btn popup-btn" aria-label="кнопка переход в форму обратной связи">Продать квартиру
-                  на В.О</button>
-              </div>
-              <div class="choice__sell choice-slide">
-                <p class="choice__sell-content">
-                  Продавая квартиру, вы получите оперативность и результат! За счет того, что я живу на В. О. - я
-                  быстро могу предоставить просмотр объекта и проанализировать рынок недвижимости
-                </p>
-                <button class="btn choice__sell-btn popup-btn" aria-label="кнопка переход в форму обратной связи">Продать квартиру
-                  на В.О</button>
+            <div class="about__choice about__choice-mobile">
+              <div class="about__slider">
+                <div class="choice__buy about__slide">
+                  <p class="choice__buy-content">
+                    Покупая квартиру вместе со мной, вы получите тщательный и быстрый поиск квартиры по любым вашим
+                    запросам
+                  </p>
+                  <button class="btn choice__buy-btn popup-btn about__slide-btn" aria-label="кнопка переход в форму обратной связи">Хочу
+                    жить на В.О</button>
+                </div>
+
+                <div class="choice__sell about__slide">
+                  <p class="choice__sell-content">
+                    Продавая квартиру, вы получите оперативность и результат! За счет того, что я живу на В. О. - я
+                    быстро могу предоставить просмотр объекта и проанализировать рынок недвижимости
+                  </p>
+                  <button class="btn choice__sell-btn popup-btn about__slide-btn" aria-label="кнопка переход в форму обратной связи">Продать квартиру
+                    на В.О</button>
+                </div>
               </div>
             </div>
           </div>
@@ -180,28 +164,34 @@
       <div class="slider">
 
         <div class="slide-wrapper">
-          <div class="slide__img-heading">
-            <img src="img/slide1.jpg" alt="изображение к услуге" class="slide__img">
-            <h3 class="slide__heading" data-target="one">Поиск недвижимости</h3>
+          <div class="slide-wrap">
+            <div class="slide__img-heading">
+              <img src="img/slide1.jpg" alt="изображение к услуге" class="slide__img">
+              <h3 class="slide__heading" data-target="one">Поиск недвижимости</h3>
+            </div>
+            <p class="slide__content">
+              Поиск обьекта без сопровождения м большим количеством комнат, а так же
+              коммерческое помещение по договоренности
+            </p>
           </div>
-          <p class="slide__content">
-            Поиск обьекта без сопровождения м большим количеством комнат, а так же
-            коммерческое помещение по договоренности</p>
           <div class="slide__price-button">
             <h3 class="slide__price">20 000 &mdash; 50 000 руб.
             </h3>
             <button class="btn slide__btn" data-path="one" aria-label="кнопка заказать услугу">Заказать</button>
           </div>
         </div>
+
         <div class="slide-wrapper">
-          <div class="slide__img-heading">
-            <img src="img/slide2.jpg" alt="изображение к услуге" class="slide__img">
-            <h3 class="slide__heading" data-target="two">Поиск недвижимости</h3>
+          <div class="slide-wrap">
+            <div class="slide__img-heading">
+              <img src="img/slide2.jpg" alt="изображение к услуге" class="slide__img">
+              <h3 class="slide__heading" data-target="two">Поиск недвижимости</h3>
+            </div>
+            <p class="slide__content">
+              Поиск обьекта без сопровождения м большим количеством комнат, а так же
+              коммерческое помещение по договоренности
+            </p>
           </div>
-          <p class="slide__content">
-            Поиск обьекта без сопровождения м большим количеством комнат, а так же
-            коммерческое помещение по договоренности
-          </p>
           <div class="slide__price-button">
             <h3 class="slide__price">
               20 000 &mdash; 50 000 руб.
@@ -209,15 +199,18 @@
             <button class="btn slide__btn" aria-label="кнопка заказать услугу" data-path="two">Заказать</button>
           </div>
         </div>
+
         <div class="slide-wrapper">
-          <div class="slide__img-heading">
-            <img src="img/slide3.jpg" alt="изображение к услуге" class="slide__img">
-            <h3 class="slide__heading" data-target="three">Поиск недвижимости</h3>
+          <div class="slide-wrap">
+            <div class="slide__img-heading">
+              <img src="img/slide3.jpg" alt="изображение к услуге" class="slide__img">
+              <h3 class="slide__heading" data-target="three">Поиск недвижимости</h3>
+            </div>
+            <p class="slide__content">
+              Поиск обьекта без сопровождения м большим количеством комнат, а так же
+              коммерческое помещение по договоренности
+            </p>
           </div>
-          <p class="slide__content">
-            Поиск обьекта без сопровождения м большим количеством комнат, а так же
-            коммерческое помещение по договоренности
-          </p>
           <div class="slide__price-button">
             <h3 class="slide__price">
               20 000 &mdash; 50 000 руб.
@@ -225,15 +218,18 @@
             <button class="btn slide__btn" aria-label="кнопка заказать услугу" data-path="three">Заказать</button>
           </div>
         </div>
+
         <div class="slide-wrapper">
-          <div class="slide__img-heading">
-            <img src="img/slide3.jpg" alt="изображение к услуге" class="slide__img">
-            <h3 class="slide__heading" data-target="four">Поиск недвижимости</h3>
+          <div class="slide-wrap">
+            <div class="slide__img-heading">
+              <img src="img/slide3.jpg" alt="изображение к услуге" class="slide__img">
+              <h3 class="slide__heading" data-target="four">Поиск недвижимости</h3>
+            </div>
+            <p class="slide__content">
+              Поиск обьекта без сопровождения м большим количеством комнат, а так же
+              коммерческое помещение по договоренности
+            </p>
           </div>
-          <p class="slide__content">
-            Поиск обьекта без сопровождения м большим количеством комнат, а так же
-            коммерческое помещение по договоренности
-          </p>
           <div class="slide__price-button">
             <h3 class="slide__price">
               20 000 &mdash; 50 000 руб.
@@ -252,14 +248,16 @@
       <div class="slider seller__slider">
 
         <div class="slide-wrapper">
-          <div class="slide__img-heading">
-            <img src="img/slide4.jpg" alt="изображение к услуге" class="slide__img">
-            <h3 class="slide__heading" data-target="five">Поиск недвижимости</h3>
+          <div class="slide-wrap">
+            <div class="slide__img-heading">
+              <img src="img/slide4.jpg" alt="изображение к услуге" class="slide__img">
+              <h3 class="slide__heading" data-target="five">Поиск недвижимости</h3>
+            </div>
+            <p class="slide__content">
+              Поиск обьекта без сопровождения м большим количеством комнат, а так же
+              коммерческое помещение по договоренности
+            </p>
           </div>
-          <p class="slide__content">
-            Поиск обьекта без сопровождения м большим количеством комнат, а так же
-            коммерческое помещение по договоренности
-          </p>
           <div class="slide__price-button">
             <h3 class="slide__price">
               20 000 &mdash; 50 000 руб.
@@ -267,15 +265,18 @@
             <button class="btn slide__btn" aria-label="кнопка заказать услугу" data-path="five">Заказать</button>
           </div>
         </div>
+
         <div class="slide-wrapper">
-          <div class="slide__img-heading">
-            <img src="img/slide5.jpg" alt="изображение к услуге" class="slide__img">
-            <h3 class="slide__heading" data-target="six">Поиск недвижимости</h3>
+          <div class="slide-wrap">
+            <div class="slide__img-heading">
+              <img src="img/slide5.jpg" alt="изображение к услуге" class="slide__img">
+              <h3 class="slide__heading" data-target="six">Поиск недвижимости</h3>
+            </div>
+            <p class="slide__content">
+              Поиск обьекта без сопровождения м большим количеством комнат, а так же
+              коммерческое помещение по договоренности
+            </p>
           </div>
-          <p class="slide__content">
-            Поиск обьекта без сопровождения м большим количеством комнат, а так же
-            коммерческое помещение по договоренности
-          </p>
           <div class="slide__price-button">
             <h3 class="slide__price">
               20 000 &mdash; 50 000 руб.
@@ -283,15 +284,18 @@
             <button class="btn slide__btn" aria-label="кнопка заказать услугу" data-path="six">Заказать</button>
           </div>
         </div>
+
         <div class="slide-wrapper">
-          <div class="slide__img-heading">
-            <img src="img/slide6.jpg" alt="изображение к услуге" class="slide__img">
-            <h3 class="slide__heading" data-target="seven">Поиск недвижимости</h3>
+          <div class="slide-wrap">
+            <div class="slide__img-heading">
+              <img src="img/slide6.jpg" alt="изображение к услуге" class="slide__img">
+              <h3 class="slide__heading" data-target="seven">Поиск недвижимости</h3>
+            </div>
+            <p class="slide__content">
+              Поиск обьекта без сопровождения м большим количеством комнат, а так же
+              коммерческое помещение по договоренности
+            </p>
           </div>
-          <p class="slide__content">
-            Поиск обьекта без сопровождения м большим количеством комнат, а так же
-            коммерческое помещение по договоренности
-          </p>
           <div class="slide__price-button">
             <h3 class="slide__price">
               20 000 &mdash; 50 000 руб.
@@ -299,15 +303,18 @@
             <button class="btn slide__btn" aria-label="кнопка заказать услугу" data-path="seven">Заказать</button>
           </div>
         </div>
+
         <div class="slide-wrapper">
-          <div class="slide__img-heading">
-            <img src="img/slide6.jpg" alt="изображение к услуге" class="slide__img">
-            <h3 class="slide__heading" data-target="eight">Поиск недвижимости</h3>
+          <div class="slide-wrap">
+            <div class="slide__img-heading">
+              <img src="img/slide6.jpg" alt="изображение к услуге" class="slide__img">
+              <h3 class="slide__heading" data-target="eight">Поиск недвижимости</h3>
+            </div>
+            <p class="slide__content">
+              Поиск обьекта без сопровождения м большим количеством комнат, а так же
+              коммерческое помещение по договоренности
+            </p>
           </div>
-          <p class="slide__content">
-            Поиск обьекта без сопровождения м большим количеством комнат, а так же
-            коммерческое помещение по договоренности
-          </p>
           <div class="slide__price-button">
             <h3 class="slide__price">
               20 000 &mdash; 50 000 руб.
@@ -786,13 +793,9 @@
     <!-- popup -->
     <section class="popup">
       <div class="popup__wrap">
-        <div class="burger burger__popup cancel" aria-label="кнопка закрыть меню">
-          <div class="burger-icon open">
+        <div class="burger__popup cancel" aria-label="кнопка закрыть меню">
             <span></span>
             <span></span>
-            <span></span>
-            <span></span>
-          </div>
         </div>
 
 
@@ -803,7 +806,7 @@
           <input id='name-popup' type="text" name="_name" class="form__input form__input-popup" placeholder="Введите ваше имя"
             data-validate-field="name">
           <label for="tel-popup" class="visually-hidden">Введите ваше имя</label>
-          <input id="tel-popup" type="tel" class="form__input form__input-tel form__input-popup" name="_tel"
+          <input id="tel-popup" type="tel" class="form__input form__input-tel form__input-popup form__input-tel-popup" name="_tel"
             placeholder="Введите номер телефона" data-validate-field="tel" data-validate-field="phone">
           <input type="text" class="form__input form__input-popup service-popup" name="_service" hidden value="">
           <button class="btn form__btn form__btn-popup">Заказать консультацию</button>
@@ -871,42 +874,8 @@
   <script src="js/inputmask.min.js"></script>
   <script src="js/just-validate.min.js"></script>
   <script src="js/popup.js"></script>
-  <script>
-    document.querySelectorAll(".form__input-tel").forEach(function (mask) {
-      var im = new Inputmask("+7 (999) 999 99 99");
-      im.mask(mask);
-    });
-
-    new JustValidate('.call__form', {
-      rules: {
-        name: {
-          required: true,
-          minLength: 2,
-          maxLength: 30
-        },
-        tel: {
-          required: true,
-          function: (name, value) => {
-            const phone = selector.inputmask.unmaskedvalue()
-            return Number(phone) && phone.length === 10
-          }
-        }
-      },
-      messages: {
-        name: {
-          required: 'Обязательное поле',
-          minLength: 'Имя должно содержать от 2 символов'
-        },
-        tel: {
-          function: 'Некорректный номер',
-          required: 'Обязательное поле'
-        }
-
-      },
-      colorWrong: 'black'
-    });
-
-  </script>
+  <script src="js/smooth-scroll.js"></script>
+  <script src="js/validate.js"></script>
 </body>
 
 </html>
