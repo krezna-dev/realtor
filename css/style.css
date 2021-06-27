@@ -662,6 +662,39 @@ img {
   margin-right: 30px;
 }
 
+.adv__img {
+  width: 72px;
+  height: 72px;
+  background-size: contain;
+}
+
+
+.adv__item:nth-child(1) .adv__img {
+  background: url('../img/Frame.svg') center center no-repeat;
+}
+
+.adv__item:nth-child(2) .adv__img {
+  background: url('../img/Frame1.svg') center center no-repeat;
+}
+
+.adv__item:nth-child(3) .adv__img {
+  background: url('../img/Frame2.svg') center center no-repeat;
+}
+
+.adv__item:nth-child(4) .adv__img {
+  background: url('../img/Frame3.svg') center center no-repeat;
+}
+
+.adv__item:nth-child(5) .adv__img {
+  background: url('../img/Frame4.svg') center center no-repeat;
+}
+
+.adv__item:nth-child(6) .adv__img {
+  background: url('../img/Frame5.svg') center center no-repeat;
+}
+
+
+
 .adv__item:nth-child(3n) {
   margin-right: 0px;
 }
